@@ -1,0 +1,66 @@
+<!DOCTYPE html>|
+<html>
+<head>
+<title>HTML Superscript Text </title>
+</head>
+</html>
+
+
+c
+
+
+The best CSS extensions for Visual Studio Code include **CSS Peek**, **HTML CSS Support**, **Prettier**, **Stylelint**, and **Color Highlight**. These extensions can help with code navigation, autocompletion, formatting, linting, and visual help for CSS development.[1][2][3]
+
+## Recommended CSS Extensions
+
+### CSS Peek
+- **CSS Peek** lets developers jump to the CSS code for a class or ID by Ctrl+Clicking it in HTML, making style debugging much easier.[3]
+
+### HTML CSS Support
+- Adds intelligent autocompletion for CSS class and ID names directly in HTML files, improving speed and accuracy while writing code.[2][1]
+
+### Prettier
+- **Prettier** is a widely used code formatter for automatic code styling on save, making CSS and other code look consistent and clean.[4][2]
+
+### Stylelint
+- **Stylelint** helps catch CSS errors and enforce consistent code standards automatically as you type.[2]
+
+### Color Highlight
+- **Color Highlight** visually displays color previews within your CSS code, making it easy to see exact shades in the editor.[2]
+
+## Quick Comparison Table
+
+| Extension         | Purpose                                               |
+|-------------------|------------------------------------------------------|
+| CSS Peek          | Jump to CSS from HTML and see style definitions [3]|
+| HTML CSS Support  | Autocomplete for CSS classes/IDs in HTML [1]     |
+| Prettier          | Format CSS (and other code) automatically [2]    |
+| Stylelint         | Lint CSS to catch errors/enforce style [2]       |
+| Color Highlight   | Show visual color swatches in code [2]           |
+
+These extensions help streamline CSS development and are highly recommended for efficient front-end workflows in VS Code.[1][3][2]
+
+[1](https://www.digitalocean.com/community/posts/6-awesome-css-extensions-for-vs-code)
+[2](https://www.youtube.com/watch?v=f4Pv42003y4)
+[3](https://www.browserstack.com/guide/best-vs-code-extensions)
+[4](https://www.reddit.com/r/webdev/comments/11mamrw/musthave_addons_for_vscode_for_html_css_and_js/)
+[5](https://code.visualstudio.com/docs/languages/css)
+[6](https://www.syncfusion.com/blogs/post/best-vs-code-extensions-web)
+[7](https://www.youtube.com/watch?v=AxfjMZbLifQ)
+[8](https://code.visualstudio.com/docs/languages/html)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+https://youtu.be/BqfPgJwlUqY?si=FiJyWXao5zHA1_4u
