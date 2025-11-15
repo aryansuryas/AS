@@ -4,10 +4,7 @@
 <title>HTML Superscript Text </title>
 </head>
 </html>
-
-
-c
-
+ 
 
 The best CSS extensions for Visual Studio Code include **CSS Peek**, **HTML CSS Support**, **Prettier**, **Stylelint**, and **Color Highlight**. These extensions can help with code navigation, autocompletion, formatting, linting, and visual help for CSS development.[1][2][3]
 
@@ -48,6 +45,7 @@ These extensions help streamline CSS development and are highly recommended for 
 [6](https://www.syncfusion.com/blogs/post/best-vs-code-extensions-web)
 [7](https://www.youtube.com/watch?v=AxfjMZbLifQ)
 [8](https://code.visualstudio.com/docs/languages/html)
+
 
 
 
