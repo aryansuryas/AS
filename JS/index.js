@@ -54,7 +54,7 @@ let fullname = `AS`;
 let age = 14;
 let std = false;
 
-
+let char = "apple"
 document.getElementById("p1").textContent = ` YOUR NAME IS ${fullname} `; // PRINTING VARIABLES USING
 document.getElementById("p2").textContent = `YOUR AGE IS ${age}`; // FOR ID " " FOR VALUES ` `
 document.getElementById("p3").textContent = ` ARE U A STUDENT ? ? ${std }`;
