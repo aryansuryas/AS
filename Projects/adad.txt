@@ -47,7 +47,7 @@ These extensions help streamline CSS development and are highly recommended for 
 [8](https://code.visualstudio.com/docs/languages/html)
 
 
-
+this contains all the notes of the html
 
 
 
