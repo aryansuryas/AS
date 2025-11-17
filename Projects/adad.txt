@@ -50,7 +50,7 @@ These extensions help streamline CSS development and are highly recommended for 
 this contains all the notes of the html
 
 
-
+// calculator 
 
 
 
