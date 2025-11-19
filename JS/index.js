@@ -1,9 +1,33 @@
 console.log("HELLO ");  // to print u can use " " or ` ` 
 console.log(`Hiiiiiiiiiii   `); 
 console.log(" THIS IS MY FIRST JS FILE");
-window.alert("HI FROM AS");  // to give alert popup on screen
+  // window.alert("HI FROM AS");  // to give alert popup on screen
 // single line comment
 /* Multi Line Comment */
+/* 
+---------------------------------------------------------------------------------------------------------------------
+JS - frontend runs on browser
+Node JS - (USED TO RUN JS IN ANY ENVIRONMENT) js Runtime Environment to handle all the network files on the other server  (backend)
+Node.js = a program that runs JavaScript outside the browser.
+✔ Node.js cannot work alone.
+It ONLY works because it can run JavaScript.
+✔ If JavaScript didn’t exist, Node.js would have no purpose.
+Node.js = Engine
+JavaScript = Fuel
+Without fuel, the engine is useless.
+----------------------------------------------------------------------------------------------------------------------------------------
+What is React.js?
+React.js is a FRONTEND JavaScript library used to build user interfaces (UI).
+React helps you build:
+Websites
+Web apps
+Dashboards
+Single Page Applications (SPA)
+It was created by Facebook (Meta).
+Or HTML + CSS + React (JS library)*/
+document.getElementById("a").textContent = `HELLO THIS IS h1 HEADING LINE`; // CREATE A TAG In HTML and give ID and .textContent give the text what u want.
+document.getElementById("b").textContent = `HELLO THIS IS A PARAGRAPH`;
+
 
 
 
