@@ -44,6 +44,13 @@ console.log(`your marks is ${b} `)  ;
 console.log(typeof a) // prints the datatype
 
 
+let name= "AS" ; // string datatype
+console.log(` my name is ${name}`) ;
+console.log(typeof name);
+
+
+
+
 
 
 
