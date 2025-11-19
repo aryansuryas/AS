@@ -48,6 +48,11 @@ let name= "AS" ; // string datatype
 console.log(` my name is ${name}`) ;
 console.log(typeof name);
 
+let onine = true ;  // boolean datatype  (true or false)
+console.log(` Bro is online ${onine}`) ;
+console.log(typeof onine);
+
+
 
 
 
