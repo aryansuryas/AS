@@ -1,5 +1,5 @@
 console.log("HELLO ");  // to print u can use " " or ` ` 
-console.log(`Hiiiiiiiiiii   `); 
+console.log(`Hiiiiiiiiiii   `);  // this will be printed in console
 console.log(" THIS IS MY FIRST JS FILE");
   // window.alert("HI FROM AS");  // to give alert popup on screen
 // single line comment
@@ -27,6 +27,8 @@ It was created by Facebook (Meta).
 Or HTML + CSS + React (JS library)*/
 document.getElementById("a").textContent = `HELLO THIS IS h1 HEADING LINE`; // CREATE A TAG In HTML and give ID and .textContent give the text what u want.
 document.getElementById("b").textContent = `HELLO THIS IS A PARAGRAPH`;
+document.getElementById("b"); // this will print the context which is there in the html file in page not in console
+
 
 
 
