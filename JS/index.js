@@ -29,6 +29,22 @@ document.getElementById("a").textContent = `HELLO THIS IS h1 HEADING LINE`; // C
 document.getElementById("b").textContent = `HELLO THIS IS A PARAGRAPH`;
 document.getElementById("b"); // this will print the context which is there in the html file in page not in console
 
+console.log("JAVASCRIPT ");   
+let x ; //  1.declare
+x=100; //   2.assign 
+let y = 100; // declare & assign 
+
+let a =100;
+let b =90.24;
+
+
+console.log(a) ;  // printing
+console.log(`you are ${a} years old`)  ; // to print using text
+console.log(`your marks is ${b} `)  ;  
+console.log(typeof a) // prints the datatype
+
+
+
 
 
 
