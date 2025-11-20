@@ -53,6 +53,20 @@ console.log(` Bro is online ${onine}`) ;
 console.log(typeof onine);
 
 
+ 
+console.log("......JAVASCRIPT...... ");   
+ let name = "aryan" ;
+ let age = 19 ;
+ let isStudent = false ;
+
+
+document.getElementById("a").textContent = ` My Name is   ${name} `;  // adding paragraph and displaying in console
+document.getElementById("b").textContent = age ;
+document.getElementById("c").textContent =isStudent ;
+document.getElementById("d") ;
+
+
+
 
 
 
