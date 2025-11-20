@@ -3,7 +3,7 @@ console.log(`Hiiiiiiiiiii   `);  // this will be printed in console
 console.log(" THIS IS MY FIRST JS FILE");
   // window.alert("HI FROM AS");  // to give alert popup on screen
 // single line comment
-/* Multi Line Comment */.
+/* Multi Line Comment */..
 /* 
 ---------------------------------------------------------------------------------------------------------------------
 JS - frontend runs on browser
