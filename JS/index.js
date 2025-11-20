@@ -53,9 +53,9 @@ console.log("......JAVASCRIPT...... ");  // EXAMPLE
  let age = 19 ;
  let isStudent = false ;
 document.getElementById("a").textContent = ` My Name is   ${name} `;  // adding paragraph and displaying in console
-document.getElementById("b").textContent = age ;
+document.getElementById("b").textContent = age ;    //  To print the names use ` ` and for the value/ variable use ${}
 document.getElementById("c").textContent =isStudent ; // prints in the main screen.
-document.getElementById("d") ;
+document.getElementById("d") ;   
 // variables ,operators , operand usage od data and specifications
 // operands (1,20,33,35) operator + , -, * , / , ** , %
 let sa= 30; // to change the values using operator.........
@@ -73,75 +73,3 @@ console.log(sa);
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//*
-let y; // declaration
-y = 12.00; // Initialsisation
-let x = 21; // Declaration +  Initialsisation
-console.log(y);
-console.log(x);
-let gpa = 12.44;
-console.log(`you are  ${x} years old  `);
- To print the names use ` ` and for the value/ variable use ${}
-dollar for value and inside curly braces mention the variable name.  
-console.log(`you  have  ${gpa}  gpa`);
-console.log(typeof gpa); // shows the data type
-
-
-let name = `Aryan Surya S`;
-let food = `pizza`
-console.log(typeof name);
-console.log(` my name is  ${name} .`);
-console.log(typeof food);
-console.log(` my Fav Food is  ${food}.`);
-
-let online = true; // boolean (TRUE : FALSE)
-console.log(typeof online);
-console.log(`bro is online : ${online}`);
-
-let fullname = `AS`;
-let age = 14;
-let std = false;
-*/
-
- // document.getElementById("p1").textContent = ` YOUR NAME IS ${fullname} ` ; // PRINTING VARIABLES USING
- // document.getElementById("p2").textContent = `YOUR AGE IS ${age}`; // FOR ID " " FOR VALUES ` `
- // document.getElementById("p3").textContent = ` ARE U A STUDENT ? ? ${std }`;
-  
-// document.getElementById("b").textContent = `This is a JS notes`;
- // let char = "apple" ;
-
- 
