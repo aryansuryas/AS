@@ -74,7 +74,26 @@ sa -= 2;
 sa *= 2;    
 sa /= 2;  
   
+let a = 50;
+let b = 10;
+let c = 2;
+let sa = a + b * c - (a / c) ** 2;
+// Order of operations:
+// Operations are performed in the following order: 
+// 1. parenthesis ()
+// 2. exponentiation * **
+// 3. multiplication and division (from left to right)
+// 4. addition and subtraction (from left to right)
 
+console.log(sa);
+// Expected output: -555.0
+
+
+
+
+
+
+ 
 
 
 
