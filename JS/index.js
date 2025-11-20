@@ -62,7 +62,7 @@ console.log("......JAVASCRIPT...... ");
 
 document.getElementById("a").textContent = ` My Name is   ${name} `;  // adding paragraph and displaying in console
 document.getElementById("b").textContent = age ;
-document.getElementById("c").textContent =isStudent ;
+document.getElementById("c").textContent =isStudent ; // prints in the main screen
 document.getElementById("d") ;
 
 
