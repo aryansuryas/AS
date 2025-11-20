@@ -33,37 +33,41 @@ console.log("JAVASCRIPT ");
 let x ; //  1.declare
 x=100; //   2.assign 
 let y = 100; // declare & assign 
-
 let a =100;
 let b =90.24;
-
-
 console.log(a) ;  // printing
 console.log(`you are ${a} years old`)  ; // to print using text
 console.log(`your marks is ${b} `)  ;  
 console.log(typeof a) // prints the datatype
-
-
-let name= "AS" ; // string datatype
+// string datatype
+let name= "AS" ; 
 console.log(` my name is ${name}`) ;
 console.log(typeof name);
-
-let onine = true ;  // boolean datatype  (true or false)
+// boolean datatype  (true or false)
+let onine = true ;  
 console.log(` Bro is online ${onine}`) ;
 console.log(typeof onine);
 
-
- 
-console.log("......JAVASCRIPT...... ");   
+console.log("......JAVASCRIPT...... ");  // EXAMPLE  
  let name = "aryan" ;
  let age = 19 ;
  let isStudent = false ;
-
-
 document.getElementById("a").textContent = ` My Name is   ${name} `;  // adding paragraph and displaying in console
 document.getElementById("b").textContent = age ;
 document.getElementById("c").textContent =isStudent ; // prints in the main screen.
 document.getElementById("d") ;
+// variables ,operators , operand usage od data and specifications
+// operands (1,20,33,35) operator + , -, * , / , ** , %
+let sa= 30; // to change the values using operator.........
+let s=10;
+s=s+1;  // addition
+s=s-1;   //subtraction
+s=s*1 ;  // multiplication
+s=s / 1;  // division
+s=s**2 // exponents
+s=s%2 ;
+sa += 2; // or u can directly assign witout taking the name of the variable 
+console.log(sa);
 
 
 
@@ -101,21 +105,6 @@ document.getElementById("d") ;
 
 
 
-/* 
-
-console.log(`hello`); // output basic
-console.log(`this is my JS notes`); // for output : inspect -> console
-// window.alert(`This is an aleeeert`);  // to give alert
-// this is a comment
-this is
- a
-multiline
-comments 
-
-document.getElementById("a")  ;
-console.log(a);
-
- this is used to print the text on display here without (.textContent = `hello ` ;) it will print the text which is in html or else what u give in JS 
 
 
 //*
