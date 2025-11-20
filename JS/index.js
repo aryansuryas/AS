@@ -68,7 +68,12 @@ s=s**2 // exponents
 s=s%2 ;
 sa += 2; // or u can directly assign witout taking the name of the variable 
 console.log(sa);
-
+ // direct operand
+sa += 2;    
+sa -= 2;    
+sa *= 2;    
+sa /= 2;  
+  
 
 
 
