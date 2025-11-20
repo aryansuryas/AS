@@ -73,7 +73,7 @@ sa += 2;
 sa -= 2;    
 sa *= 2;    
 sa /= 2;  
-  
+  /* EXAMPLE PROBLEM
 let a = 50;
 let b = 10;
 let c = 2;
@@ -87,7 +87,7 @@ let sa = a + b * c - (a / c) ** 2;
 
 console.log(sa);
 // Expected output: -555.0
-
+*/
 
 
 
