@@ -90,6 +90,23 @@ console.log(sa);
 */
 
 
+// example of inputs 
+//1.
+let name ;
+name= window.prompt(" ENTER YOUR NAME");
+console.log(name);  // goes to dev tools or console
+ 
+//2.
+let name ;
+document.getElementById("sub").onclick = function(){
+    name=document.getElementById("aa").value; // prints in  the main screen focus on where things print either on console or the main screem.
+    document.getElementById("d").textContent = ` HELLO  ${name}`;
+}
+ // take name and print it down
+
+
+
+
 
 
 
