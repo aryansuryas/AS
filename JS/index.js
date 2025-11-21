@@ -124,6 +124,63 @@ console.log(a);
 // number 0 to boolean is true
 // "" returns false if empty
 
+  
+
+/*
+let age ;   // not assigned
+a=Boolean(age);     
+aa=Number(age);   
+aaa=String(age);   
+console.log(a);  //  false
+console.log(aa);  //  NaN
+console.log(aaa);// undefined
+ 
+  // --------------------------------
+let age= 0 ;    assigned number
+a=Boolean(age);     
+aa=Number(age);   
+aaa=String(age);   
+console.log(a);  //  false
+console.log(aa);  //  0
+console.log(aaa);// 0
+// --------------------------------
+let age= "0" ;  // value inside string 
+a=Boolean(age);     
+aa=Number(age);   
+aaa=String(age);   
+console.log(a);  //   true
+console.log(aa);  //  0
+console.log(aaa);// 0
+
+// --------------------------------
+let age= "apple" ;    // string
+a=Boolean(age);     
+aa=Number(age);   
+aaa=String(age);   
+console.log(a);  //   true
+console.log(aa);  //  NaN
+console.log(aaa);// apple
+// --------------------------------
+ let age=  true ;   // boolean
+a=Boolean(age);     
+aa=Number(age);   
+aaa=String(age);   
+console.log(a);  //  true 
+console.log(aa);  //  1
+console.log(aaa);//  true
+// --------------------------------
+let age=   false ;  // false
+a=Boolean(age);     
+aa=Number(age);   
+aaa=String(age);   
+console.log(a);  //   false
+console.log(aa);  //  1
+console.log(aaa);//  false
+
+*/
+
+
+
 
 
 
