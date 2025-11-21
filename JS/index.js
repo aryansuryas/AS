@@ -144,6 +144,15 @@ console.log(a);  //  false
 console.log(aa);  //  0
 console.log(aaa);// 0
 // --------------------------------
+  
+let age= 1 ;     
+a=Boolean(age);     
+aa=Number(age);   
+aaa=String(age);   
+console.log(a);  //   true
+console.log(aa);  // 1
+console.log(aaa);  //  1
+ // --------------------------------
 let age= "0" ;  // value inside string 
 a=Boolean(age);     
 aa=Number(age);   
