@@ -73,7 +73,7 @@ sa += 2;
 sa -= 2;    
 sa *= 2;    
 sa /= 2;  
-  /* EXAMPLE PROBLEM
+  /* EXAMPLE PROBLEMs
 let a = 50;
 let b = 10;
 let c = 2;
