@@ -54,7 +54,7 @@ console.log("......JAVASCRIPT...... ");  // EXAMPLE
  let isStudent = false ;
 document.getElementById("a").textContent = ` My Name is   ${name} `;  // adding paragraph and displaying in console
 document.getElementById("b").textContent = age ;    //  To print the names use ` ` and for the value/ variable use ${}
-document.getElementById("c").textContent =isStudent ; // prints in the main screen.
+document.getElementById("c").textContent =isStudent ; // prints in the main screen. not in console
 document.getElementById("d") ;   
 // variables ,operators , operand usage od data and specifications
 // operands (1,20,33,35) operator + , -, * , / , ** , %
