@@ -114,6 +114,16 @@ console.log( typeof age); // returns string
 console.log(`NUMBER : ${a} `);    //Number
 console.log(typeof a);   // Returns Number
 
+let age ='';
+a=Boolean(age);  // type converting
+console.log(a);
+
+// input is always string
+// string to num ====== NaN
+//string to boolean ===== returns true
+// number 0 to boolean is true
+// "" returns false if empty
+
 
 
 
