@@ -104,7 +104,15 @@ document.getElementById("sub").onclick = function(){
 }
  // take name and print it down
 
+// TYPE CONVERSION (one data type to other data type)
+let age ;
+age=window.prompt("HOW OLD ARE U??"); // pop up style of taking input
+a=Number(age);  // type converting
+console.log(`STRING : ${age} `);    // string
+console.log( typeof age); // returns string
 
+console.log(`NUMBER : ${a} `);    //Number
+console.log(typeof a);   // Returns Number
 
 
 
