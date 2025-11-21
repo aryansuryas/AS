@@ -188,6 +188,18 @@ console.log(aaa);//  false
 
 */
 
+// const = variable that cant be changed
+// capitalize only for primitive (NUMBER AND BOOLEAN)
+const PI = 3.142857;
+let PI =3.14 ;   // a.js:9 Uncaught ReferenceError: pi is not defined
+let radius;
+let circumference;
+radius=window.prompt("Enter The Radius");
+r =Number(radius);
+circumference = 2 * r * pi ;
+console.log(circumference);
+
+
 
 
 
