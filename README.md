@@ -5,6 +5,3 @@ I have saved all the codes which I have self made daily updates
 
 1.all 
 2.Notes
-
-
-day1
