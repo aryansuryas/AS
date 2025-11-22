@@ -1,2 +1,2 @@
 # AS
-All Language Codes And Projects🎈🚀
+All Language Codes And Projects🎈🚀⛰️
