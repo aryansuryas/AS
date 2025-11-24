@@ -1,3 +1,3 @@
 # AS
 All Language Codes And Projects🎈🚀⛰️
-HTML | CSS| JS | GIT | NODE js .whs
+HTML | CSS| JS | GIT | NODE js .
