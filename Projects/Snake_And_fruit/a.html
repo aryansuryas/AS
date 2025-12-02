@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Neon Snake Arcade</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <script defer src="https://pro.fontawesome.com/releases/v5.10.0/js/all.js" integrity="sha384-G/ZR3ntz68JZrH4pfPJyRbjW+c0+ojii5f+GYiYwldYU69A+Ejat6yIfLSxljXxD" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg-color: #111;
+      --screen-bg: #0d0d16;
+      --neon-blue: #00f3ff;
+      --neon-pink: #ff00ff;
+      --neon-green: #0aff00;
+      --text-color: #e0e0e0;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; user-select: none; }
+
+    body {
+      height: 100vh;
+      width: 100vw;
+      background-color: var(--bg-color);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Orbitron', sans-serif;
+      color: var(--text-color);
+      overflow: hidden;
+    }
+
+    .arcade-machine {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      border: 2px solid #333;
+      border-radius: 10px;
+      background: #1a1a1a;
+      box-shadow: 0 0 50px rgba(0, 0, 0, 0.8), inset 0 0 20px rgba(0,0,0,0.5);
+    }
+
+    /* CRT Screen Effect */
+    .screen-container {
+      position: relative;
+      border: 4px solid #444;
+      border-radius: 4px;
+      box-shadow: 0 0 15px var(--neon-blue);
+      overflow: hidden;
+    }
+
+    canvas {
+      background-color: var(--screen-bg);
+      display: block;
+      /* Subtle scanline texture via CSS pattern */
+      background-image: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+      background-size: 100% 2px, 3px 100%;
+    }
+
+    /* CRT Flicker Animation */
+    .scanlines {
+      position: absolute;
+      top: 0; left: 0; width: 100%; height: 100%;
+      background: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,0) 50%, rgba(0,0,0,0.2) 50%, rgba(0,0,0,0.2));
+      background-size: 100% 4px;
+      pointer-events: none;
+      z-index: 10;
+      animation: flicker 0.15s infinite;
+      opacity: 0.3;
+    }
+
+    @keyframes flicker {
+      0% { opacity: 0.27; }
+      50% { opacity: 0.3; }
+      100% { opacity: 0.27; }
+    }
+
+    /* UI Overlay */
+    .ui-layer {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 15px;
+      text-shadow: 0 0 5px var(--neon-blue);
+    }
+
+    .stat-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .label { font-size: 10px; color: #888; letter-spacing: 2px; }
+    .value { font-size: 24px; font-weight: 900; color: var(--neon-blue); }
+
+    /* Controls / Button */
+    .controls {
+      margin-top: 20px;
+    }
+
+    #replay {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 14px;
+      padding: 12px 30px;
+      background: transparent;
+      border: 2px solid var(--neon-green);
+      color: var(--neon-green);
+      border-radius: 5px;
+      cursor: pointer;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      transition: all 0.2s ease;
+      box-shadow: 0 0 10px rgba(10, 255, 0, 0.2);
+    }
+
+    #replay:hover {
+      background: var(--neon-green);
+      color: #000;
+      box-shadow: 0 0 20px var(--neon-green);
+    }
+
+    #replay:active {
+      transform: scale(0.95);
+    }
+
+    /* Game Over Overlay */
+    #game-over-overlay {
+      position: absolute;
+      top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      display: none;
+      z-index: 20;
+      pointer-events: none; /* Let clicks pass through to canvas if needed, mostly for visual */
+    }
+    
+    #game-over-overlay.visible { display: block; }
+
+    .go-text {
+      font-size: 40px;
+      font-weight: 900;
+      color: var(--neon-pink);
+      text-shadow: 0 0 10px var(--neon-pink), 2px 2px 0px #fff;
+      margin-bottom: 10px;
+      animation: pulseText 1s infinite alternate;
+    }
+
+    @keyframes pulseText {
+      from { text-shadow: 0 0 10px var(--neon-pink); transform: scale(1); }
+      to { text-shadow: 0 0 20px var(--neon-pink), 0 0 30px var(--neon-pink); transform: scale(1.05); }
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="arcade-machine">
+    
+    <div class="ui-layer">
+      <div class="stat-box">
+        <span class="label">SCORE</span>
+        <span class="value" id="score">00</span>
+      </div>
+      <div class="stat-box">
+        <span class="label">HIGH SCORE</span>
+        <span class="value" id="max-score">00</span>
+      </div>
+    </div>
+
+    <div class="screen-container">
+      <div class="scanlines"></div>
+      <div id="canvas-wrapper"></div> <!-- Canvas injects here -->
+      
+      <div id="game-over-overlay">
+        <div class="go-text">GAME OVER</div>
+      </div>
+    </div>
+
+    <div class="controls">
+      <button id="replay">
+        <i class="fas fa-play"></i> START GAME
+      </button>
+    </div>
+
+  </div>
+
+<script>
+// --- CONFIGURATION & SETUP ---
+const dom_replay = document.querySelector("#replay");
+const dom_score = document.querySelector("#score");
+const dom_max_score = document.querySelector("#max-score");
+const dom_wrapper = document.querySelector("#canvas-wrapper");
+const dom_overlay = document.querySelector("#game-over-overlay");
+
+const dom_canvas = document.createElement("canvas");
+dom_wrapper.appendChild(dom_canvas);
+const CTX = dom_canvas.getContext("2d");
+
+const W = (dom_canvas.width = 400);
+const H = (dom_canvas.height = 400);
+
+// Game State
+let snake, food, particles = [];
+const cells = 20;
+const cellSize = W / cells;
+let score = 0;
+let maxScore = window.localStorage.getItem("maxScore") || 0;
+let isGameOver = false;
+let requestID;
+let lastTime = 0;
+let moveTimer = 0;
+const moveInterval = 1000 / 12; // Snake moves 12 times per second (adjust for speed)
+
+dom_max_score.innerText = maxScore.toString().padStart(2, "0");
+
+// --- HELPER CLASSES ---
+
+const helpers = {
+  Vec: class {
+    constructor(x, y) { this.x = x; this.y = y; }
+    add(v) { this.x += v.x; this.y += v.y; return this; }
+    equals(v) { return this.x === v.x && this.y === v.y; }
+  },
+  randHue: () => ~~(Math.random() * 360),
+  drawGrid: () => {
+    CTX.lineWidth = 1;
+    CTX.strokeStyle = "#1a1a24"; // Subtle dark grid
+    CTX.beginPath();
+    for (let i = 1; i < cells; i++) {
+      let f = (W / cells) * i;
+      CTX.moveTo(f, 0); CTX.lineTo(f, H);
+      CTX.moveTo(0, f); CTX.lineTo(W, f);
+    }
+    CTX.stroke();
+    CTX.closePath();
+  },
+  // Box shadow glow helper
+  addGlow: (color, blur = 15) => {
+    CTX.shadowBlur = blur;
+    CTX.shadowColor = color;
+  },
+  removeGlow: () => {
+    CTX.shadowBlur = 0;
+  }
+};
+
+const KEY = {
+  ArrowUp: false, ArrowRight: false, ArrowDown: false, ArrowLeft: false,
+  // Input Buffer to prevent self-collision on fast turns
+  queue: [], 
+  listen() {
+    addEventListener("keydown", (e) => {
+      if(["ArrowUp","ArrowDown","ArrowLeft","ArrowRight"].includes(e.key)){
+        e.preventDefault();
+        // Limit queue size
+        if(this.queue.length < 2) {
+          this.queue.push(e.key);
+        }
+      }
+    });
+  },
+  updateDirection(snake) {
+    if(this.queue.length > 0) {
+      const key = this.queue.shift();
+      const currentDir = snake.dir;
+      
+      // Prevent 180 degree turns
+      if (key === "ArrowUp" && currentDir.y === 1) return;
+      if (key === "ArrowDown" && currentDir.y === -1) return;
+      if (key === "ArrowLeft" && currentDir.x === 1) return;
+      if (key === "ArrowRight" && currentDir.x === -1) return;
+
+      if (key === "ArrowUp") snake.nextDir = new helpers.Vec(0, -1);
+      if (key === "ArrowDown") snake.nextDir = new helpers.Vec(0, 1);
+      if (key === "ArrowLeft") snake.nextDir = new helpers.Vec(-1, 0);
+      if (key === "ArrowRight") snake.nextDir = new helpers.Vec(1, 0);
+    }
+  },
+  reset() { this.queue = []; }
+};
+
+// --- GAME OBJECTS ---
+
+class Snake {
+  constructor() {
+    this.pos = new helpers.Vec(5, 10); // Grid coordinates, not pixels
+    this.dir = new helpers.Vec(1, 0);
+    this.nextDir = new helpers.Vec(1, 0); // For buffered input
+    this.history = [];
+    this.total = 3;
+    this.color = "#00f3ff"; // Neon Blue
+  }
+
+  draw() {
+    // Draw Tail/Body
+    for (let i = 0; i < this.history.length; i++) {
+      let { x, y } = this.history[i];
+      // Gradient effect: Tail is darker
+      let opacity = 0.3 + (0.7 * (i / this.history.length));
+      CTX.fillStyle = `rgba(0, 243, 255, ${opacity})`; 
+      
+      helpers.addGlow(this.color, 10);
+      CTX.fillRect(x * cellSize + 1, y * cellSize + 1, cellSize - 2, cellSize - 2);
+    }
+    helpers.removeGlow();
+
+    // Draw Head
+    let { x, y } = this.pos;
+    CTX.fillStyle = "#fff"; // White bright center
+    helpers.addGlow(this.color, 20);
+    
+    // Rounded Head
+    let px = x * cellSize;
+    let py = y * cellSize;
+    
+    CTX.beginPath();
+    // RoundRect is standard now, fallback to rect if needed
+    if(CTX.roundRect) {
+      CTX.roundRect(px, py, cellSize, cellSize, 6);
+    } else {
+      CTX.rect(px, py, cellSize, cellSize);
+    }
+    CTX.fill();
+
+    // Draw Eyes (Kawaii/Directional)
+    helpers.removeGlow();
+    CTX.fillStyle = "#000";
+    
+    let eyeOffsetX = 0;
+    let eyeOffsetY = 0;
+    
+    // Shift eyes based on direction
+    if(this.dir.x === 1) eyeOffsetX = 4;
+    if(this.dir.x === -1) eyeOffsetX = -4;
+    if(this.dir.y === 1) eyeOffsetY = 4;
+    if(this.dir.y === -1) eyeOffsetY = -4;
+
+    // Eye Left
+    CTX.beginPath();
+    CTX.arc(px + cellSize/2 - 4 + eyeOffsetX, py + cellSize/2 - 2 + eyeOffsetY, 2, 0, Math.PI*2);
+    CTX.fill();
+    // Eye Right
+    CTX.beginPath();
+    CTX.arc(px + cellSize/2 + 4 + eyeOffsetX, py + cellSize/2 - 2 + eyeOffsetY, 2, 0, Math.PI*2);
+    CTX.fill();
+  }
+
+  update() {
+    // Commit buffered direction
+    this.dir = this.nextDir;
+
+    // Record history
+    this.history.push(new helpers.Vec(this.pos.x, this.pos.y));
+    if (this.history.length > this.total) {
+      this.history.shift();
+    }
+
+    // Move
+    this.pos.add(this.dir);
+
+    // Wall Collision (Wrap Around)
+    if (this.pos.x >= cells) this.pos.x = 0;
+    if (this.pos.x < 0) this.pos.x = cells - 1;
+    if (this.pos.y >= cells) this.pos.y = 0;
+    if (this.pos.y < 0) this.pos.y = cells - 1;
+
+    // Self Collision
+    for (let p of this.history) {
+      if (helpers.isCollision(this.pos, p)) { // Note: isCollision helper defined below needs to handle grid coords
+        gameOver();
+      }
+    }
+  }
+}
+
+class Food {
+  constructor() {
+    this.pos = new helpers.Vec(0,0);
+    this.color = "#ff00ff"; // Neon Pink
+    this.spawn();
+    this.pulse = 0;
+  }
+
+  spawn() {
+    let empty = false;
+    while(!empty) {
+      this.pos.x = ~~(Math.random() * cells);
+      this.pos.y = ~~(Math.random() * cells);
+      empty = true;
+      // Don't spawn on snake
+      for (let part of snake.history) {
+        if (part.x === this.pos.x && part.y === this.pos.y) {
+          empty = false; break;
+        }
+      }
+      if(snake.pos.x === this.pos.x && snake.pos.y === this.pos.y) empty = false;
+    }
+    this.color = `hsl(${helpers.randHue()}, 100%, 60%)`;
+  }
+
+  draw() {
+    // Pulse Animation
+    this.pulse += 0.1;
+    let sizeVar = Math.sin(this.pulse) * 2;
+
+    let x = this.pos.x * cellSize + cellSize/2;
+    let y = this.pos.y * cellSize + cellSize/2;
+    
+    helpers.addGlow(this.color, 15);
+    CTX.fillStyle = this.color;
+    CTX.beginPath();
+    CTX.arc(x, y, (cellSize/2 - 4) + sizeVar, 0, Math.PI*2);
+    CTX.fill();
+    helpers.removeGlow();
+  }
+}
+
+class Particle {
+  constructor(x, y, color) {
+    this.x = x;
+    this.y = y;
+    this.color = color;
+    this.size = Math.random() * 3 + 1;
+    this.speedX = Math.random() * 2 - 1;
+    this.speedY = Math.random() * 2 - 1;
+    this.life = 1.0; // Opacity
+  }
+  update() {
+    this.x += this.speedX;
+    this.y += this.speedY;
+    this.life -= 0.02;
+    this.size *= 0.95; // Shrink
+  }
+  draw() {
+    CTX.globalAlpha = this.life;
+    CTX.fillStyle = this.color;
+    CTX.fillRect(this.x, this.y, this.size, this.size);
+    CTX.globalAlpha = 1.0;
+  }
+}
+
+helpers.isCollision = (v1, v2) => {
+  return v1.x == v2.x && v1.y == v2.y;
+};
+
+// --- GAME FUNCTIONS ---
+
+function createParticles(x, y, color) {
+  for(let i=0; i<10; i++) {
+    particles.push(new Particle(x, y, color));
+  }
+}
+
+function updateScore() {
+  score++;
+  dom_score.innerText = score.toString().padStart(2, "0");
+  if(score > maxScore) {
+    maxScore = score;
+    dom_max_score.innerText = maxScore.toString().padStart(2, "0");
+    localStorage.setItem("maxScore", maxScore);
+  }
+}
+
+function loop(timestamp) {
+  if(isGameOver) return;
+
+  requestID = requestAnimationFrame(loop);
+
+  // Delta time calculation for consistent rendering
+  let deltaTime = timestamp - lastTime;
+  
+  // Clear & Draw BG
+  CTX.clearRect(0, 0, W, H);
+  helpers.drawGrid();
+
+  // Particle System (runs every frame for smoothness)
+  for(let i = particles.length - 1; i >= 0; i--) {
+    particles[i].update();
+    particles[i].draw();
+    if(particles[i].life <= 0) particles.splice(i, 1);
+  }
+
+  // Draw Food (pulse anim needs high FPS)
+  food.draw();
+
+  // Game Logic (Gated by moveInterval)
+  if (deltaTime >= moveInterval) {
+    lastTime = timestamp;
+    
+    KEY.updateDirection(snake);
+    snake.update();
+
+    // Check Food Collision
+    if (helpers.isCollision(snake.pos, food.pos)) {
+      snake.total++;
+      createParticles(
+        food.pos.x * cellSize + cellSize/2, 
+        food.pos.y * cellSize + cellSize/2, 
+        food.color
+      );
+      updateScore();
+      food.spawn();
+    }
+  }
+
+  // Draw Snake (Interpolation could be added here for smoother visual movement, keeping grid snap for now)
+  snake.draw();
+}
+
+function gameOver() {
+  isGameOver = true;
+  cancelAnimationFrame(requestID);
+  dom_overlay.classList.add('visible');
+  dom_replay.innerHTML = '<i class="fas fa-redo"></i> TRY AGAIN';
+}
+
+function reset() {
+  isGameOver = false;
+  score = 0;
+  dom_score.innerText = "00";
+  dom_overlay.classList.remove('visible');
+  dom_replay.innerHTML = '<i class="fas fa-pause"></i> RUNNING';
+  
+  KEY.reset();
+  snake = new Snake();
+  food = new Food();
+  particles = [];
+  
+  lastTime = performance.now();
+  loop(lastTime);
+}
+
+// --- INITIALIZATION ---
+
+KEY.listen();
+dom_replay.addEventListener("click", reset);
+
+// Initial draw to show something before start
+CTX.fillStyle = "#111";
+CTX.fillRect(0,0,W,H);
+helpers.drawGrid();
+CTX.fillStyle = "#444";
+CTX.font = "20px Orbitron";
+CTX.textAlign = "center";
+CTX.fillText("PRESS START", W/2, H/2);
+
+</script>
+</body>
+</html>
