@@ -79,6 +79,309 @@
 
     <input type="checkbox" checked />
 -->
+<!DOCTYPE html>
+ <html>
+<head>
+    <title>COMPLETE HTML</title>
+</head>
+    <body>
+        <h1>HTML NOTES :<hr></h1>
+        <!-- <hr> horizontal line <br> for break --> <!-- size differs from <h1></h1> to <h6></h6>  -->
+     <p>This HTML COntains all the codes in it</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit porro dignissimos voluptate quae, in similique exercitationem maiores incidunt. Dignissimos, facere? Architecto dolor quidem maxime cum quaerat provident sapiente deserunt ea.</p>
+        <!-- <p> for paragraph to write in a new line use "LOREM + TAB " -->
+        <pre> hello this is pre-Defined text.
+        defines perofatted.
+        and preserves both space and line breaks
+        </pre>
+        <!-- <pre> is used for performatted text -->
+            <b>hello<br></b> <!-- <b></b> for bold text -->
+            this is the <strong> mega prototype </strong> of HTML<br><!-- <strong.</strong> same as bold -->
+            this is <i>Italic</i> text <!-- for italic :<i></i> -->
+            <br>this is <em>Emphasised</em> text <!-- <em> for epasised text </em> -->
+            <br> this is a <mark>marked</mark> or <mark>highited</mark> Text. <!-- <mark></mark> used t hghlight
+             the text required to display -->
+            <br> this is a <del>Deleted </del> Text <br> <!-- <del> is used to scratch or cot on the text -->
+            this is a <ins>Inserted </ins> Text <br> <!-- <ins> is used to insert a underline below the text -->
+            The chemical formula of water is H<sub>2</sub>O <br> <!-- <sub> subscript used to form text down  -->
+            The  formula of area is  πr<sup>2</sup> <br> <!-- <sup> superscript used to form text down  -->
+            <blockquote>hello his is a  Indented Text  </blockquote> <!-- this <blockquote> indents the text fro the left -->
+            <q>This is quotation Text </q><br> <!-- <q> This uses " " to mark the text   -->
+              <p>
+                <abbr title=" World Wide Web "> WWB</abbr> is a Search Engine
+                <!-- Used to abbrevate the word when putting cursor use title -->
+              </p>
+              <address>
+                No.58 kanaka nursing home rd<br>
+                2<sup>nd</sup> phase kanakapura <!-- adress for the adress locate using talic -->
+              </address>
+              <!-- address and i , bold and h3, em and i ,cite and i-->
+              <br>book by <cite>Aryan Surya S</cite> <!-- same as italic to render in italic -->
+              <!-- bdo : bi directional override used to override the  direction --> 
+              <br><bdo dir="ltr">this is used to override the sentence</bdo> <!-- ltr : left to right -->
+              <br><bdo dir="rtl">this is used to override the sentence</bdo> <!-- right to left -->
+              <br><a href = "https://www.google.com" target="_blank" title="GOOGLE">
+                Click here to go to Google
+              </a>
+              
+              <!--  unvisited:blue ***** visited:purple **** active :red -->
+              <!-- target is where u want to open the page "_self" means self "_blank means new"/ "_parent" parent document / "_top i full body in window" -->
+            <br><a href = " mailto:aryansurya752006@gmail.com" target="_blank" title="Email">
+                 MAIL <!-- use mailto: inside href -->
+              <br></a>
+             <!-- to add image use <img> and src "filename'" -->
+              <!-- u can edit height width and f image not generated u can add text  using alt="---" -->
+              
+              <br><a href = "https://www.google.com" target="_blank" title="GOOGLE">
+        
+                <img src="image.png"     height="150" width="325" alt="tom and jerry">
+              </a>
+            <!--                                 LIST                                    -->
+            <!-- three types of list
+             1. ordered  list -->
+            
+            <h3>UNORDERED LIST :<hr></h3>
+            <!-- for unordered we use <ul></ul> tag and then <li></li> tag to store all the values in the list  -->
+            <ul>
+              <li>apple</li>
+              <li>banana</li>
+               <li>mango
+                <ul>
+                <li>fresh</li>
+                <li>juice</li>
+                <li>shake</li>
+               </ul>
+              </li>
+                <li>grapes</li>
+                 <li>pineapple</li>
+                  <li>guava</li>
+            </ul>
+            <h3>ORDERED LIST :<hr></h3>
+              <!--'a' indicates lowercase letters,
+                 'A' indicates uppercase letters,
+                 'i' indicates lowercase Roman numerals,
+                   'I' indicates uppercase Roman numerals,
+                  and '1' indicates numbers (default). --> 
+           
+<!-- for ordered instead of ul we use <ol></ol> and  <li></li> tag to  store the data -->
+             <ol type="1" start="1" >
+                <li>Wake up</li>
+                 <li>Brush</li>
+                  <li>Exercise</li>
+                   <li>Bath</li>
+                    <li>Breakfast</li>
+                     <li>College
+                      <ol type="a" start="1">
+                        <li>DSA</li>
+                         <li>JAVA</li>
+                          <li>CN</li>
+                           <li>OS</li>
+                            <li>DBMS
+                             <ol type="i" start="1">
+                               <li>SQL</li>
+                                <li>PL/SQL</li>
+                                 <li>MY-SQL</li>
+                             </ol>
+                            </li>
+                      </ol>
+                     </li>
+              <li>FSD</li>
+               <li>TNT</li>
+                <li>DMGT</li>
+                 <li>DLD</li>
+
+             </ol>
+              
+             <!--<dL> DESCRIPTION DEFINITION  <dt> : DESCRIPTION TERM AND THEN <DD> TO DEFINE--->
+            <h3> DESCRIPTION LIST </h3><hr><br>
+            <dl>
+              <dt>HTML :</dt>
+              <dd>this is the html structure</dd>
+              <dt>CSS :</dt>
+            <dd>this is the  Cascsading style sheet</dd>
+            </dl>
+            
+            <!--                               TABLE                       -->
+                     
+        <table bgcolor="black" border="1" width="100%" align="center" >   <!-- Border and (width in %) -->
+            <caption>Time Table</caption> <!-- to add heading -->
+            <tr bgcolor="cyan" > <!-- alignment (left,Right,center)  -->
+                <th> Monday</th>  <!-- <th> Tabe Head MAin Bold Text -->
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+                <th>Saturday</th>
+                <th rowspan="3" bgcolor="red">Holiday</th>  <!-- top to cottom rowspan -->
+            </tr>
+            <tr bgcolor="grey" align="center" >
+                <td>TNT</td>
+                <td>DMGT</td> <!-- <td> Table data -->
+                <td>FSD</td>
+                <td>DS</td>
+                <td colspan="2">DLD</td>   <!-- colspan left to right -->
+                  <!-- TO ADD BACKGROUND COLOR USE bgcolor="___" inside <tr> tag  --> 
+                     <!-- <th>  TABLE HEADING it bolds te text and then <td> is the value or the data--> 
+            </tr>
+             <tr bgcolor="yellow" align="center">
+                <td>TNT</td>
+                <td>DMGT</td> <!-- <td> Table data -->
+                <td>FSD</td>
+                <td>DS</td>
+                <td colspan="2">DLD</td>
+                 
+            </tr>
+ 
+        </table>
+         <p> 100 &nbsp; 90</p> <!-- No breaking space   100   90 -->
+        <p> 100 &lt; 90</p> <!-- lesser than    100 < 90-->
+        <p> 100 &gt; &nbsp; 90</p> <!-- Gretaer than    100 > 90 -->
+         <p> 100 &amp; 90</p>  <!-- amperand   100 & 90 -->
+        <p> 100 &apos; 90</p>  <!-- apostophie   100 ' 90 -->
+        <p> 100 &quot; 90</p>  <!--  Quotation 100 " 90 -->
+        <p> 100 &copy; 90</p>  <!-- copy  100 © 90  -->
+        <p> 100 &reg; 90</p>   <!-- registered rademark  100 ® 90-->
+        <!-- .............+-SPAN AND DIV >....................... -->
+       <div> 
+            htmL notes
+            <div>full complete</div>
+          <!--  fresh line ::::used to group section of ccontents takes full width -->
+        <div>helloooo</div>  
+        <span>hello</span>
+        welcome
+        <span>CONTINUES in the same LINE</span>
+
+        <!-- USED TO CREATE FORM -->
+          <h1>FORMS<hr></h1>
+        <form>
+            <!-- <input> : used to take input  -->
+             <label for="firstname">First name :</label><br>   <!-- for="id name"  so hat if u click on tect it takes u to the input box-->
+             <input type="text" id= "firstname" name="firstname" value="fn"><br>   <!-- DEFAULT is text -->
+             
+             <label for="lastname">Last name :</label><br>       <!-- used to give the name of that form on top -->
+             <input type="text" id= "lastname"name="lastname"><br>
+            <!-- using password as type it will show dot value -->
+             <label for="pwd">Password:</label><br>
+             <input type="password" id= "pwd" name="pwd"><br>
+       <!-- input type : id is imp : name is mandatory :  -->
+        <label for="namee"> Text :</label><br>
+        <input type="text" id="namee" name="namee" placeholder="write something">
+       <form>
+            <label for="namee"> Text :</label><br>
+        <input type="text" id="namee" name="namee"  value="aryansurya752006" placeholder="write something"><br>
+        <label for="namee"> Pincode:</label><br>
+
+
+        
+  <!-- value : gives the initial input values
+       placeholder="" : it shows the text inside the box whwnever clicked gives blank box
+       readonly : cant be modified
+       disabled :same as readonly cnt be changes saved like that but it wont send it to the server
+       size="" defines the size of the box default is : 20
+       maxlength="" : defies the maxlegth
+       required : mandatory
+       input= "submit"  value="submit"    gives submit button
+       autfocus : autofocuses on the first label
+       autocomplet e: will fill based on old data
+       input type="radio:  O is used to take the value option 
+       for more than 2 take the same name for "name" to have to select only oe option
+         color : to add color
+         date  ; to mention date
+         get and post : get url whereas post secret
+         datetime-local : add time date 
+         month: only month and year
+         time : only time
+         week : week and year
+         email : to add email -->
+ 
+        </form>
+        <!-- adiing image to submit option -->
+ <form action="/action_page.php">
+         <label for="firstname">First name :</label><br>   <!-- for="id name"  so hat if u click on tect it takes u to the input box-->
+             <input type="text" id= "firstname" name="firstname"  ><br>   <!-- DEFAULT is text -->
+             
+             <label for="lastname">Last name :</label><br>       <!-- used to give the name of that form on top -->
+             <input type="text" id= "lastname"name="lastname"><br>
+             <input type="image" src="image.png" alt="submit" height="50"width=80>
+             <input type="reset" value="Reset">
+              <label for="emailenter">EMAIL:</label><br>       <!-- used to give the EMAIL -->
+        <input type="email" id= "emailenter" name="emailenter"   ><br> 
+         <label for="filee"> file:</label><br>       <!-- used to CHOOSE THE FILE FROM THE FOLDER -->
+        <input type="file" id= "filee" name="filee"  multiple ><br> <!-- to open or add multiple files in a choose file  -->
+        <label for="hide"> hidE</label><br>
+        <input type="hidden" id="hide" name="hide"  value="445566"> <!-- to hide the daa from the user to see                                                                                                                                                                                                                            -->
+        <label for="hida">Number :</label><br> <!-- to write the number -->
+        <input type="number" id="hida" name="hida" min="1" max="5" step="2" > <!-- can use min and max -->
+      <!-- use of min and max and "step" to add the space -->
+        <br><label for="range">are u sure?</label><br> <!-- to write the number -->
+        <input type="range" id="range" name="range" min="1" max="50"   >
+        rm> 
+        <label for="sea"> GOOGLE : </label>         
+        <input type="search" id="sea" name="sea"> <!-- used to search in the fields -->
+        <label for="telephone">telephone : </label><br>
+        <input type="tel" id="telephone" name="telephone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">  <!-- jS attribute -->
+        <!-- to add url -->
+        <br><label for="url">url : : </label>
+         <br><input type="tel" id="url" name="url" >
+<!-- aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa -->
+        
+                <!-- we use<select> to add the options called <option > tag to choose 
+                    here we can mention "size" in select 
+                    "multiple" to select multiple options (Hold control) -->
+            </select> 
+             <input type="submit" value="Submit">
+
+             <form>
+            <label for="area"> MULTI LINE TEXT </label>
+            <textarea id="area" name="area" rows="23" cols="24" > </textarea> 
+            <!-- to add multiline comment
+            can add "rows" and "cols" to thye area -->
+            <input type="submit" value="Submit">
+
+
+             <form>
+            <fieldset>  <!-- to add boundary on the outside -->
+                <legend>Login</legend>  <!-- legend to add the text main text on the border  -->
+             <label for="firstname">First name :</label><br>   <!-- for="id name"  so hat if u click on tect it takes u to the input box-->
+             <input type="text" id= "firstname" name="firstname"  ><br>   <!-- DEFAULT is text -->
+             
+             <label for="lastname">Last name :</label><br>       <!-- used to give the name of that form on top -->
+             <input type="text" id= "lastname"name="lastname"><br>
+        </form>
+        </fieldset>
+      
+
+        <form>
+            <label for="states"></label> Select a State: </label>&nbsp;&nbsp;&nbsp;
+            <input type="text" id="states" name="states" list="icefl">
+            <datalist id="icefl">
+            <option value="AP"></option>   <!-- option to chose from the datalist  -->
+            <option value="AP"></option>
+            <option value="KA"></option>
+            <option value="TN"></option>
+            <option value="KL"></option>
+            <option value="GO"></option>
+           
+        </datalist>
+         <input type= "submit" value="Submit">
+         <!-- one concept output is left -->
+       
+           
+
+
+
+
+       </form>
+           
+ 
+        </form>
+
+
+
+
+   
+</body>
+</html>
 
  
 
@@ -218,6 +521,7 @@ This is a<sup> superscript </sup>text<br>
 
 </body>
 </html>
+
 
 
 
