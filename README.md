@@ -8,3 +8,4 @@
 Things to Study
 • Front-end 
 • Back-end 
+• Data Base
