@@ -4,3 +4,5 @@
 • Ideas
 • AI Tools
 • Daily update Notes
+
+Things to Study
