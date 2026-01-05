@@ -6,3 +6,4 @@
 • Daily update Notes
 
 Things to Study
+• Front-end 
