@@ -8,4 +8,4 @@
 Things to Study
 • Front-end (HTML5 , CSS3 , JS)
 • Back-end 
-• Data Base
+• Data Base SQL( PostreSQL) , MongoDB
