@@ -6,6 +6,6 @@
 • Daily update Notes
 
 Things to Study
-• Front-end 
+• Front-end (HTML5 , CSS3 , JS)
 • Back-end 
 • Data Base
