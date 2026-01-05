@@ -3,3 +3,4 @@
 • Notepad
 • Ideas
 • AI Tools
+• Daily update Notes
