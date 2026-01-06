@@ -75,6 +75,23 @@ std::cout << "HEllo " << name << "My Age is " <<a << "And my CGPA is " << d << '
 //----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
+ #include <iostream>
+ int main(){     
+ // const keyword used with variables it cant be changes
+  const double  PI = 3.14285739;
+ int radius =10;
+ PI = 3.14; // error: assignment of read-only variable 'PI'
+    double area = PI * radius * radius;
+    std::cout<<"Area of circle is: "<<area ;
+ 
+    /*as.cpp: In function 'int main()':
+as.cpp:6:7: error: assignment of read-only variable 'PI'
+  PI = 3.14; // error: assignment of read-only variable 'PI'
+       ^~~~
+       */
+
+
+
 
 
 
