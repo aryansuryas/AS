@@ -18,6 +18,13 @@ int main(){
  int main(){
     std::cout <<"Hello World AS" << std::endl; // << std::endl; acts like full top and adds next text to next line (Flushes the output buffer)
     std::cout <<"ARYAN SURYA S" << std::endl;
+    // This (//) is single line comment
+    /* This
+     is
+         a
+          multi-line
+         comment */
     return 0;
  }
+
 
