@@ -26,5 +26,19 @@ int main(){
          comment */
     return 0;
  }
+//
+ #include <iostream>
+ int main(){
+      
+int a=10;
+int d=20;
+int q=a+d;
+
+std::cout <<a << '\n';   //10
+std::cout <<d << '\n';  //20
+std::cout <<q << '\n'; //30
+    return 0;
+ }
+
 
 
