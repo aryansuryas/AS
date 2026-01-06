@@ -6,6 +6,7 @@
 -> pacman -Syu                             ->Y                      ->Y
 then
 ->MSY2 MSYS ->pacman -Su
-->.
+->...
+
 
 
