@@ -72,23 +72,24 @@ std::cout << "HEllo " << name << "My Age is " <<a << "And my CGPA is " << d << '
  //float : 4 bytes decimal number (1.5,2.3,3.14,44.99,100.001,-20.55) less precise than double
  //long : 8 bytes whole number (1,2,3,55,44,999,1000,10,1,-20) larger range than int
 
-//----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//------------------------------------------------------------------------ const Keyword  ------------------------------------------------------------------------------------------------
 
 
  #include <iostream>
  int main(){     
  // const keyword used with variables it cant be changes
-  const double  PI = 3.14285739;
+  const double  PI = 3.14285739;                                          ALWAYS USE CAPITAL LETTERS
  int radius =10;
  PI = 3.14; // error: assignment of read-only variable 'PI'
     double area = PI * radius * radius;
-    std::cout<<"Area of circle is: "<<area ;
+    std::cout<<"Area of circle is: "<<area ;      
  
     /*as.cpp: In function 'int main()':
 as.cpp:6:7: error: assignment of read-only variable 'PI'
   PI = 3.14; // error: assignment of read-only variable 'PI'
        ^~~~
        */
+
 
 
 
