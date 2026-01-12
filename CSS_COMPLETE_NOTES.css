@@ -31,8 +31,16 @@ CSS3, Tailwind CSS
 
 
 accesing Using Different Names:
-1. id <h1 id="one"> HELLO </h1>   
+1. id  use # Hastag 
+<h1 id="one"> HELLO </h1>    
  #one{
    color:"white";
  }
+
+2. Using Class (use . )
+<h1 class="odd" >This is a Website</h1>
+ .odd{
+            background-color: grey;
+        }
+
 
