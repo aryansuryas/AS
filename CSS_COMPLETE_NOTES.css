@@ -1,0 +1,31 @@
+CSS3, Tailwind CSS
+Cascading Style Sheet (CSS acronym)
+Is a style sheet language used for describing the presentation of a document written in a markup language like HTML. CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.
+   
+ Three Types  
+    1. Inline CSS (INSIDE HTML TAG)
+   / <body style="background-color: rgb(255, 140, 0);color:aqua"></body>
+    <h1 style="color:rgb(253, 1, 1)">This is a Website</h1>
+
+
+    2. Internal CSS (INSIDE HTML FILE)
+    <head>
+    <title>HTML-CSS</title>
+    <style>
+        body{
+            background-color: black;
+            color:rgb(19, 197, 22)
+        }
+        h1{
+            color:rgb(255, 2, 162)
+        }
+        p{
+            color:antiquewhite;.
+        }
+    </style>
+</head>
+
+
+    3. External CSS ( SEPARATE CSS FILE)
+    <link rel="stylesheet" href="style.css">
+
