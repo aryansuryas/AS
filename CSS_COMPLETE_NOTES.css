@@ -29,3 +29,10 @@ CSS3, Tailwind CSS
     3. External CSS ( SEPARATE CSS FILE)
     <link rel="stylesheet" href="style.css">
 
+
+accesing Using Different Names:
+1. id <h1 id="one"> HELLO </h1>   
+ #one{
+   color:"white";
+ }
+
