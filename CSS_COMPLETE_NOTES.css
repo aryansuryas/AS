@@ -303,6 +303,31 @@ p::first-line { /** first line of the paragraph **/
     background-color: black;
     color: white;
   }
+
+   /********************************************************************  SHADOW  ****************************************************************************************/
+
+
+ there are 2 types of shadows
+1.  box-shadow  
+2.  text-shadow 
+
+  text-shadow: 5px 5px 5px rgb(183, 7, 7); (horizontal shadow, vertical shadow, blur radius, color)
+
+   <h1>Welcome To My Website</h1>
+
+  h1{
+ text-shadow: 0px 0px 5px rgb(255, 247, 0), 0px -5px 5px rgb(255, 0, 0);
+
+ box-shadow: 5px 5px 5px rgb(0, 25, 248);
+ 
+
+}
+h1:hover{ /* when we hover the mouse on h1 element this effect will be applied */
+  box-shadow:5px 5px 5px rgb(0, 25, 248);
+ 
+}
+
+
 /********************************************************************  DEFINITION   ****************************************************************************************/
 
 color : adding colour to text 
