@@ -246,6 +246,63 @@ li:nth-child( odd){ /* odd: used to select odd numbered elements*/
 li:nth-child( 2n){ /* 2n: used to select every 2nd element*/
     background-color: rgb(255, 0, 0);
 }
+
+
+/********************************************************************  PSEUDO ELEMENTS  ****************************************************************************************/
+
+  /* Pseudo Elements
+used to style specific parts of an element like the first letter or first line of a paragraph
+*/
+
+
+ <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non assumenda beatae deserunt fuga debitis necessitatibus officiis exercitationem pariatur obcaecati distinctio veniam odit minus aliquam enim dolores quidem ipsam, reiciendis atque! </p>
+
+<ul id="a">
+    <li id="aa">Home</li>
+    <li id="ba">About</li>
+    <li id="ca">Services</li>
+    <li id="da">Contact</li>
+</ul>
+<ul id="b">
+     <li id="ea">a</li>
+     <li id="6a">b</li>
+     <li id="7a">c</li>
+      <li id="8a">d</li>
+</ul>
+
+
+
+p::first-letter { /** first letter of the paragraph **/
+    font-size: 200%;
+    color: blue;
+    font-family: 'Press Start 2P';
+}
+p::first-line { /** first line of the paragraph **/
+    font-weight: bold;
+    color: rgb(255, 2, 2);
+}
+#a li::before{ /*** before the element ***/
+    content: "★";
+    color: gold;
+}
+#a li::before{  /*** before the element ***/
+    content: "★";
+    color: gold;
+} 
+   
+ #aa::after{  /*** after the element ***/
+  content: "🎆";
+  font-size: 24px;
+ }
+  li::marker{ /** marker of list items ***/
+  content: "👉";
+  color: rgb(222, 255, 10);
+ }
+ p::selection /* text selection */
+  {
+    background-color: black;
+    color: white;
+  }
 /********************************************************************  DEFINITION   ****************************************************************************************/
 
 color : adding colour to text 
