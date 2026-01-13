@@ -155,7 +155,38 @@ img{
 p{
   clear:both; /* left right or both */
   
+/********************************************************************  POSITION   ****************************************************************************************/
 
+ <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta ratione eveniet ex quae voluptatem facere illum culpa nesciunt, voluptates cupiditate et, quaerat sapiente doloribus cum molestiae consequuntur earum aut facilis.</p>
+    
+    <div class="box1"> <div class="box2"> </div></div>
+    
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta ratione eveniet ex quae voluptatem facere illum culpa nesciunt, voluptates cupiditate et, quaerat sapiente doloribus cum molestiae consequuntur earum aut facilis.</p>
+     
+   
+
+ .box1{
+  width:300px;
+  height:300px;
+  border:2px solid;
+  background-color:rgb(41, 196, 227);
+  position: relative; /* relative: we can move*/
+  top: 50px; /* move down 50px */
+ left: 50px; /* move right 100px */
+
+ }
+
+ .box2{
+  width:100px;
+  height:100px;
+  border:2px solid;
+  background-color:rgb(91, 50, 157);
+    position: absolute;  /* absolute can be taken*/
+    top : 100px;
+    left:100px;
+
+ }
+ 
 
 /********************************************************************  DEFINITION   ****************************************************************************************/
 
