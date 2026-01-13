@@ -355,8 +355,7 @@ animation-timing-function: ease-in-out; /**speed of animation**/
 @keyframes  myslide {  /**name of animation**/
   from{margin-left: 100%;} /*starting position**/
    to{ margin-left:0%} /*ending position**/
-
-
+ 
 } 
 /********************************************************************  DEFINITION   ****************************************************************************************/
 
