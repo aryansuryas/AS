@@ -357,6 +357,64 @@ animation-timing-function: ease-in-out; /**speed of animation**/
    to{ margin-left:0%} /*ending position**/
  
 } 
+
+/*****/
+ #box1{
+border: 4px solid #000000 ;
+width: 250px;
+height: 250px;
+font-size:225px;
+text-align: center;
+background: rgb(255, 247, 2);
+ 
+/*
+animation: myslide ; /**name of animation**/
+animation-iteration-count: infinite; /**number of times**/
+animation-duration: 2s; /**duration**/
+animation-delay: 1s; /**delay before starting**/
+animation-timing-function: ease-in-out; /**speed of animation**/
+
+ animation: 3s linear 1s infinite  ; /** shorthand**/
+ 
+ 
+}
+
+#box1:hover{
+  animation: 1s linear 0s infinite  running a; /**to pause the animation on hover**/}
+
+
+@keyframes rotate {
+  from {transform: rotate(0deg);}
+  to {transform: rotate(360deg);}
+}
+
+@keyframes a{
+   0%{background-color: red;}
+   10%{background-color: blue;}
+    20%{background-color: green;}
+    30%{background-color: yellow;}
+    40%{background-color: orange;}
+    50%{background-color: purple;}
+    60%{background-color: pink;}
+    70%{background-color: brown;}
+    80%{background-color: grey;}
+    90%{background-color: black;}
+    100%{background-color: red;}
+    
+}
+
+
+
+
+@keyframes  myslide {  /**name of animation**/
+  from{margin-left: 100%;} /*starting position**/
+   to{ margin-left:0%} /*ending position**/
+
+
+} 
+
+
+ 
 /********************************************************************  DEFINITION   ****************************************************************************************/
 
 color : adding colour to text 
