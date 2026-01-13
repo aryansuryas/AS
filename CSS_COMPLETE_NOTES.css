@@ -63,7 +63,39 @@ accesing Using Different Names:
             background-color: grey;
         }
 
+/********************************************************************   ADDING BORDER  ****************************************************************************************/
 
+<h1>This is my Website </h1>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, repellendus et eum sunt nulla velit dolor ratione adipisci praesentium, eius quasi quae earum! Aut, tenetur. Rerum nulla dolor itaque consequatur!</p>
+
+CSS:
+h1{
+    color: blue;
+    border-top-style: dotted;
+    border-bottom-style: solid;
+    border-left-style:dashed;
+    border-right-style: double;
+    padding:10px;
+    border-right-width: 10px;
+    border-right-color: rgb(255, 200, 0);
+    border-top-width: 10px;
+    border-top-color: rgb(234, 7, 7);
+    border-bottom-width: 10px;
+    border-bottom-color: rgb(38, 255, 0);
+    border-left-width: 10px;
+    border-left-color: blue;
+
+  }
+
+p{
+  border-style  : solid;
+  border-width: 5px;
+  border-color: sandybrown;
+  border-radius: 10px; 
+  padding: 10px;
+ 
+
+}
 
 /********************************************************************  DEFINITION   ****************************************************************************************/
 
