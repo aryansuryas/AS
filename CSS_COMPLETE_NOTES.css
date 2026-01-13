@@ -125,6 +125,38 @@ p{
  }
 /******************************************************************** MARGIN   ****************************************************************************************/
 
+
+ <img  src="a.jpg" width="125px" >
+  <img  src="b.jpg" width="125px">
+  <img  src="c.jpg" width="125px">
+
+    <div class="box">BOX 1</div>
+    <div class="box">BOX 2</div>
+    <div class="box">BOX 3</div>
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta ratione eveniet ex quae voluptatem facere illum culpa nesciunt, voluptates cupiditate et, quaerat sapiente doloribus cum molestiae consequuntur earum aut facilis.</p>
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta ratione eveniet ex quae voluptatem facere illum culpa nesciunt, voluptates cupiditate et, quaerat sapiente doloribus cum molestiae consequuntur earum aut facilis.</p>
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta ratione eveniet ex quae voluptatem facere illum culpa nesciunt, voluptates cupiditate et, quaerat sapiente doloribus cum molestiae consequuntur earum aut facilis.</p>
+
+
+
+img{
+  float: left;
+ }
+
+ .box{
+  width:120px;
+  height:120px;
+  border:2px solid;
+  font-size:30px;
+  text-align:center;
+  background-color:rgb(238, 74, 74);
+  float:left /*positions an element to the left of its container */;
+ }
+p{
+  clear:both; /* left right or both */
+  
+
+
 /********************************************************************  DEFINITION   ****************************************************************************************/
 
 color : adding colour to text 
