@@ -186,6 +186,10 @@ p{
     left:100px;
 
  }
+   fixed: The element is positioned relative to the browser window. It will not move when you scroll.
+absolute:  moves back(())The element is positioned relative to its nearest positioned ancestor (instead of positioned relative to the viewport, like fixed). If an absolute positioned element has no positioned ancestors, it uses the document body, and moves along with scrolling.
+relative: The element is positioned relative to its normal position. Setting the top, right, bottom, and left properties of a relatively-positioned element will cause it to be adjusted away from its normal position. Other content will not be adjusted to fit into any gap left by the element.
+stickuy: The element is treated as relative positioned until it crosses a specified point, then it is treated as fixed positioned.
  
 
 /********************************************************************  DEFINITION   ****************************************************************************************/
