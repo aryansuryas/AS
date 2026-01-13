@@ -190,8 +190,62 @@ p{
 absolute:  moves back(())The element is positioned relative to its nearest positioned ancestor (instead of positioned relative to the viewport, like fixed). If an absolute positioned element has no positioned ancestors, it uses the document body, and moves along with scrolling.
 relative: The element is positioned relative to its normal position. Setting the top, right, bottom, and left properties of a relatively-positioned element will cause it to be adjusted away from its normal position. Other content will not be adjusted to fit into any gap left by the element.
 stickuy: The element is treated as relative positioned until it crosses a specified point, then it is treated as fixed positioned.
- 
 
+
+  /********************************************************************  PSEUDO CLASSES   ****************************************************************************************/
+
+ /*pseudo class 
+ A keyword addefd to the selector to specify a special state of the selected element. For example, :hover can be used to change a button's color when the user hovers over it with a mouse.   
+*/
+
+
+   <a href="www.google.com" target="_blank">Google</a>
+   <button>Click Me!</button>
+
+<ul>
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3</li>
+  <li>Item 4</li>
+
+  <li>Item 5</li>
+
+
+</ul>
+
+
+a:link {  /* link: used to color the link*/
+   color: green;
+     
+}
+a:visited { /* visited: used to color the visited link*/
+   color: rgb(190, 238, 0);
+}
+
+a:hover { /* hover: used to color the link when mouse is over it*/
+   color: rgb(255, 0, 0);
+}
+
+a:active{ /* active: used to color the link when it is clicked*/
+    color: rgba(255, 0, 153, 0);
+}
+
+button:hover{  /* hover: used to change button color when mouse is over it*/
+background-color: brown;
+}
+button:active{ /* active: used to change button color when it is clicked*/
+background-color: rgb(102, 0, 255);
+}
+
+li:nth-child(even){ /* nth-child: used to select elements based on their position in a group of siblings*/
+    background-color: lightgray;
+}
+li:nth-child( odd){ /* odd: used to select odd numbered elements*/
+    background-color: rgb(4, 51, 147);
+}
+li:nth-child( 2n){ /* 2n: used to select every 2nd element*/
+    background-color: rgb(255, 0, 0);
+}
 /********************************************************************  DEFINITION   ****************************************************************************************/
 
 color : adding colour to text 
