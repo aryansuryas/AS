@@ -93,10 +93,27 @@ p{
   border-color: sandybrown;
   border-radius: 10px; 
   padding: 10px;
- 
 
 }
+  /********************************************************************   ADDING BORDER IMAGES  ****************************************************************************************/
 
+ body{
+  background-image: url(tom_and_jerry.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+h1{
+  background : linear-gradient(to right, rgb(0, 0, 233), rgb(207, 207, 8));
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+p{
+  background : linear-gradient(to top, blue, yellow);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
 /********************************************************************  DEFINITION   ****************************************************************************************/
 
 color : adding colour to text 
