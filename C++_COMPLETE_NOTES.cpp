@@ -1,9 +1,9 @@
                                    C++
-// Fast , Video Editting , Middle Level , Used for creating video games
-// high Level = Human readable Low Level= Machine Readable   c++ Middle Level
-// EXTENSION (.cpp)
-// Download all the Extension (C++/C  runner , .coderunenr) and in Vs code website MinGW dowmload Compiler 
-//  https://youtu.be/z2jDamkbBF0?si=jBpAcgaw3asPojT5  (WATCH HOW TO RUN C/C++ IN SYSTEM  )
+ Fast , Video Editting , Middle Level , Used for creating video games
+ high Level = Human readable Low Level= Machine Readable   c++ Middle Level
+ EXTENSION (.cpp) OBJECT ORIENTED PROGRAMMNG
+ Download all the Extension (C++/C  runner , .coderunenr) and in Vs code website MinGW dowmload Compiler 
+ https://youtu.be/z2jDamkbBF0?si=jBpAcgaw3asPojT5  (WATCH HOW TO RUN C/C++ IN SYSTEM  )
 
 
                                      //BASIC CODE
@@ -89,6 +89,7 @@ as.cpp:6:7: error: assignment of read-only variable 'PI'
   PI = 3.14; // error: assignment of read-only variable 'PI'
        ^~~~
        */
+
 
 
 
