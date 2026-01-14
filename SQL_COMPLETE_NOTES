@@ -11,8 +11,8 @@ SQL is a simple database basic component of database.
 
                                                       Types of Databases 
 🛑 Relational Databases                                                            🛑 Non-Relational Databases (NoSQL)    
-Data stored in tables (rows & columns)                                            Data not stored in tables. But stored in  Flexible structure
-Uses SQL                                                                          Examples: MongoDB,Cassandra      
+Data stored in tables (rows & columns)                                              Data not stored in tables. But stored in  Flexible structure
+Uses SQL                                                                            Examples: MongoDB,Cassandra      
 Examples:MySQL,PostgreSQL,Oracle                              
 
 
