@@ -5,7 +5,11 @@
  Download all the Extension (C++/C  runner , .coderunenr) and in Vs code website MinGW dowmload Compiler 
  https://youtu.be/z2jDamkbBF0?si=jBpAcgaw3asPojT5  (WATCH HOW TO RUN C/C++ IN SYSTEM  )
 
+🔴🟡🟢 OUTPUT
+->  g++ filename.cpp -o filename
+->./filename
 
+                                   
                                      //BASIC CODE
 #include <iostream> //INPUT - OUTPUT STREAM
 int main(){
@@ -16,7 +20,7 @@ int main(){
 //----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
  #include <iostream>
  int main(){
-    std::cout <<"Hello World AS" << std::endl; // << std::endl; acts like full top and adds next text to next line (Flushes the output buffer)
+    std::cout <<"Hello World AS" << std::endl; // << std::endl; acts like full stop and adds next text to next line (Flushes the output buffer)
     std::cout <<"ARYAN SURYA S" << std::endl;
     // This (//) is single line comment
     /* This
@@ -89,6 +93,7 @@ as.cpp:6:7: error: assignment of read-only variable 'PI'
   PI = 3.14; // error: assignment of read-only variable 'PI'
        ^~~~
        */
+
 
 
 
