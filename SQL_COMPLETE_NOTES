@@ -90,3 +90,11 @@ RENAME COLUMN old_name TO new_name;
 Example
 ALTER TABLE work
 RENAME COLUMN day TO date;
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+🟣 To Insert Rows
+INSERT INTO EMPLOYEE (name, id, salary, hire_date)                                            INSERT INTO EMPLOYEE   
+VALUES                                                                OR                      VALUES  ('Rahul', 103, 52000.250, '2023-06-10') ;    
+('Rahul', 103, 52000.250, '2023-06-10'),                                                      select * from EMPLOYEE;
+('Priya', 104, 60000.000, '2022-09-25'),                                                      
+('Kiran', 105, 41000.125, '2024-02-01');                                   
+ select * from EMPLOYEE;                                               
