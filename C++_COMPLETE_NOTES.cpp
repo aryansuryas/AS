@@ -4,6 +4,7 @@
  EXTENSION (.cpp) OBJECT ORIENTED PROGRAMMNG
  Download all the Extension (C++/C  runner , .coderunenr) and in Vs code website MinGW dowmload Compiler 
  https://youtu.be/z2jDamkbBF0?si=jBpAcgaw3asPojT5  (WATCH HOW TO RUN C/C++ IN SYSTEM  )
+https://www.youtube.com/watch?v=vLnPwxZdW4Y  ( C++ BASICS NEDED )
 
 🔴🟡🟢 OUTPUT
 ->  g++ filename.cpp -o filename
@@ -94,6 +95,17 @@ as.cpp:6:7: error: assignment of read-only variable 'PI'
        ^~~~
        */
 
+----------------------------------------------------------------------------------------------------------
+  TAKING INPUT AND PRINTING
+
+  #include <iostream>
+int main(){
+     int number;
+    std::cout << " Enter A Number : " ;
+     std::cin >> number;
+    std::cout << "HELLO WORLD " << number << std::endl;
+    return 0;
+}
 
 
 
