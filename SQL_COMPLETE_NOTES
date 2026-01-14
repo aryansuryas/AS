@@ -1,18 +1,18 @@
-                                                                SQL ( Structured Query Language)
+                                                                            SQL ( Structured Query Language)
+
 🔴🟡🟢SQL stands for Structured Query Language.
 It is used to create, manage, and manipulate databases.
 SQL is a simple database basic component of database. 
-
- 
 🔵MySQL Environment
           Use MinGW64 (for command-line tools if required)
           Use MySQL Workbench 8.0 CE
           Always set a password for the root user
- 
-🔵Types of Databases 
-1. Relational Databases                                          2. Non-Relational Databases (NoSQL)    
-Data stored in tables (rows & columns)                            Data not stored in tables. But stored in  Flexible structure
-Uses SQL                                                          Examples: MongoDB,Cassandra      
+
+
+                                                      Types of Databases 
+🛑 Relational Databases                                                            🛑 Non-Relational Databases (NoSQL)    
+Data stored in tables (rows & columns)                                            Data not stored in tables. But stored in  Flexible structure
+Uses SQL                                                                          Examples: MongoDB,Cassandra      
 Examples:MySQL,PostgreSQL,Oracle                              
 
 
@@ -31,20 +31,20 @@ Database name → Acts like a filename
 🟠Create Database
 CREATE DATABASE database_name;
 
-🟠Use Database
+🟣Use Database
 USE database_name;                                       OR         Set it as Default Schema in MySQL Workbench.
 
-🟠Drop (Delete) Database
+🟣Drop (Delete) Database
 DROP DATABASE database_name;
 
-🟠Read-Only Mode :: Enable Read-Only Mode
+🟣Read-Only Mode :: Enable Read-Only Mode
 ALTER DATABASE database_name READ ONLY = 1;
 Database cannot be dropped while in read-only mode.
 
-🟠Disable Read-Only Mode
+🟣Disable Read-Only Mode
 ALTER DATABASE database_name READ ONLY = 0;
 
-🟠Creating a Table
+🟣Creating a Table
 CREATE TABLE EMPLOYEE (
     name VARCHAR(50),
     id INT,
@@ -52,7 +52,7 @@ CREATE TABLE EMPLOYEE (
     hire_date DATE
 );
 
-🟠Data Types Explained
+🟣Data Types Explained
 VARCHAR(50) → String (max 50 characters)
 INT → Integer
 DECIMAL(5,3) →  5 digits total   3 digits after decimal point
@@ -62,36 +62,30 @@ DATE → Stores date (YYYY-MM-DD)
 No comma after the last column
 End statement with ;
 
-🟠Select Data
+🟣Select Data
 Select All Records from a Table
 SELECT * FROM table_name;
 
-🟠Drop Table
+🟣Drop Table
 DROP TABLE table_name;
 
-🟠Alter Table
+🟣Alter Table
 Add a Column
 ALTER TABLE table_name
 ADD phone_number INT;
 
-🟠Modify a Column
-ALTER TABLE table_name
-MODIFY num INT
-AFTER name;
+🟣Modify a Column            
+ALTER TABLE table_name                        OR                        ALTER TABLE table_name
+MODIFY num INT                                                           MODIFY num INT FIRST;
+AFTER name;                             
 
-
-OR
-
-ALTER TABLE table_name
-MODIFY num INT FIRST;
-
-🟠Drop a Column
+🟣Drop a Column
 ALTER TABLE table_name
 DROP COLUMN hire_date;
 
-🟠Rename a Column
-ALTER TABLE table_name
-RENAME COLUMN old_name TO new_name;
+🟣Rename a Column
+ALTER TABLE table_name                 
+RENAME COLUMN old_name TO new_name;                                      
 
 Example
 ALTER TABLE work
