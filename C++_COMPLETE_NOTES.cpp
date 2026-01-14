@@ -107,9 +107,11 @@ int main(){
     return 0;
 }
 
+Statically typed languages check variable types at compile-time (e.g., Java, C++), catching errors early, requiring explicit type declarations, and offering better performance
+Once Variable Name Given Cannot Be changed.
 
-
-
+Dynamically typed languages check types at runtime (e.g., Python, JavaScript), allowing more flexibility, faster initial coding, but potentially leading to runtime errors, as variables can change types.
+One Variable Name Given Can Be changed.
 
 
 
