@@ -1,11 +1,5 @@
-#AS
-• Complete Notes
-• Notepad
-• Ideas
-• AI Tools
-• Daily update Notes
+Hi 👋, I’m Aryan Surya S.
+Here you’ll find 📚 programming language notes, 💻 coding examples, and 🛠️ important services & resources to support your learning and development journey.
+Happy coding 🚀✨
 
-Things to Study
-• Front-end (HTML5 , CSS3 , JS)
-• Back-end 
-• Data Base SQL( PostreSQL) , MongoDB
+15/01/2026
