@@ -3,6 +3,8 @@
  high Level = Human readable Low Level= Machine Readable   c++ Middle Level
  EXTENSION (.cpp) OBJECT ORIENTED PROGRAMMNG
  Download all the Extension (C++/C  runner , .coderunenr) and in Vs code website MinGW dowmload Compiler 
+C++ offers a vast range of libraries and tools, such as the Standard Template Library (STL)
+
  https://youtu.be/z2jDamkbBF0?si=jBpAcgaw3asPojT5  (WATCH HOW TO RUN C/C++ IN SYSTEM  )
 https://www.youtube.com/watch?v=vLnPwxZdW4Y  ( C++ BASICS NEDED )
 
@@ -112,6 +114,7 @@ Once Variable Name Given Cannot Be changed.
 
 Dynamically typed languages check types at runtime (e.g., Python, JavaScript), allowing more flexibility, faster initial coding, but potentially leading to runtime errors, as variables can change types.
 One Variable Name Given Can Be changed.
+
 
 
 
