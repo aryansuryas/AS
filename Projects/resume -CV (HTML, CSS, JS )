@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aryan Surya S - Resume</title>
+    <style>
+        /* --- GENERAL STYLES --- */
+        :root {
+            --primary-black: #000000;
+            --dark-gray: #333333;
+            --light-gray: #666666;
+            --paper-bg: #ffffff;
+            --body-bg: #e0e0e0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--body-bg);
+            background-image: radial-gradient(#aaa 1px, transparent 1px);
+            background-size: 20px 20px;
+            margin: 0;
+            padding: 40px 0;
+            color: var(--dark-gray);
+            line-height: 1.6;
+        }
+
+        /* --- THE PAPER CONTAINER --- */
+        .resume-paper {
+            background-color: var(--paper-bg);
+            width: 850px;
+            max-width: 95%;
+            margin: 0 auto;
+            padding: 50px 60px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            border-radius: 2px;
+            min-height: 100vh;
+        }
+
+        /* --- HEADER --- */
+        header {
+            text-align: center;
+            border-bottom: 2px solid var(--primary-black);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            font-size: 2.8rem;
+            margin: 0 0 10px 0;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--primary-black);
+        }
+
+        h2.role-title {
+            font-size: 1.2rem;
+            font-weight: 400;
+            margin: 0 0 15px 0;
+            color: var(--light-gray);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* --- CONTACT LINE --- */
+        .contact-line {
+            font-size: 0.95rem;
+            color: var(--primary-black);
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 5px;
+        }
+
+        .contact-line a {
+            color: var(--primary-black);
+            text-decoration: none;
+            font-weight: 600;
+            border-bottom: 1px dotted transparent;
+            transition: border-bottom 0.3s;
+        }
+
+        .contact-line a:hover {
+            border-bottom: 1px solid var(--primary-black);
+        }
+
+        .separator {
+            margin: 0 8px;
+            color: #999;
+            font-weight: 300;
+        }
+
+        /* --- SECTIONS --- */
+        section {
+            margin-bottom: 30px;
+        }
+
+        h3.section-title {
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            color: var(--primary-black);
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 15px;
+            padding-bottom: 5px;
+            letter-spacing: 1px;
+        }
+
+        /* --- ENTRIES (Education, Projects) --- */
+        .entry {
+            margin-bottom: 20px;
+        }
+
+        .entry-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 5px;
+        }
+
+        .title {
+            font-weight: 700;
+            font-size: 1.05rem;
+            color: #000;
+        }
+
+        .subtitle {
+            font-style: italic;
+            color: #444;
+        }
+
+        .date {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: #555;
+            min-width: 120px;
+            text-align: right;
+        }
+
+        ul {
+            margin-top: 5px;
+            padding-left: 18px;
+        }
+
+        li {
+            margin-bottom: 4px;
+        }
+
+        /* --- SKILLS & CERTS GRID --- */
+        .skills-container {
+            display: grid;
+            grid-template-columns: 150px 1fr;
+            gap: 10px 20px;
+        }
+        .skill-category {
+            font-weight: bold;
+            color: #000;
+        }
+
+        /* List for certifications */
+        .cert-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .cert-list li::before {
+            content: "•";
+            color: var(--primary-black);
+            font-weight: bold;
+            display: inline-block; 
+            width: 1em;
+            margin-left: -1em;
+        }
+        .cert-list li {
+            margin-bottom: 5px;
+            padding-left: 1em;
+        }
+
+        /* --- PRINT BUTTON --- */
+        .btn-container {
+            text-align: center;
+            margin-top: 20px;
+            padding-bottom: 40px;
+        }
+        button {
+            background: #000;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 1rem;
+            border-radius: 4px;
+        }
+        button:hover {
+            background: #333;
+        }
+
+        /* --- MOBILE TWEAKS --- */
+        @media (max-width: 600px) {
+            .resume-paper { padding: 20px; width: 100%; }
+            h1 { font-size: 2rem; }
+            .contact-line { flex-direction: column; line-height: 1.8; }
+            .separator { display: none; }
+            .entry-header { flex-direction: column; }
+            .date { text-align: left; margin-bottom: 5px; }
+            .skills-container { display: block; }
+            .skill-category { margin-top: 10px; display: block; border-bottom: 1px solid #eee; margin-bottom: 5px;}
+        }
+
+        @media print {
+            body { background: none; padding: 0; }
+            .resume-paper { box-shadow: none; width: 100%; max-width: 100%; margin: 0; padding: 0 20px; }
+            .btn-container { display: none; }
+        }
+         /* Styling for the entire languages section and headings remains the same as before */
+
+.languagea-entry-container{
+     border-color: ;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+
+}
+
+    </style>
+</head>
+<body>
+
+    <div class="resume-paper">
+        <!-- HEADER -->
+        <header>
+            <h1 id="my-name">Aryan Surya S</h1>
+            <h2 class="role-title">Aspiring Full Stack Developer & AI Enthusiast</h2>
+            
+            <div class="contact-line">
+                <span>+91 7676938466</span>
+                <span class="separator">|</span>
+                <span>Bengaluru, India</span>
+                <span class="separator">|</span>
+                <a href="mailto:aryansuryasgowda@gmail.com">aryansuryasgowda@gmail.com</a>
+                <span class="separator">|</span>
+                <a href="https://www.linkedin.com/in/aryansuryas" target="_blank">LinkedIn</a>
+                <span class="separator">|</span>
+                <a href="https://github.com/aryansuryas" target="_blank">GitHub</a>
+            </div>
+        </header>
+
+        <!-- OBJECTIVE -->
+        <section>
+            <h3 class="section-title">Objective</h3>
+            <p>
+                Motivated Computer Science student with a strong foundation in web development and Artificial Intelligence. 
+                Certified in Oracle Cloud and Google GenAI. Passionate about building innovative solutions and solving 
+                complex problems through code.
+            </p>
+        </section>
+
+        <!-- EDUCATION (Moved to Top) -->
+        <section>
+            <h3 class="section-title">Education</h3>
+            <div class="entry">
+                <div class="entry-header">
+                    <div>
+                        <span class="title">Dayananda Sagar University</span> <br>
+                        <span class="subtitle">Bachelor of Technology in Computer Science</span>
+                    </div>
+                    <span class="date">2024 - 2028</span>
+                </div>
+            </div>
+            <div class="entry">
+                <div class="entry-header">
+                    <div>
+                        <span class="title">Pre-University & Secondary Education</span> <br>
+                        <span class="subtitle">
+                            State Board (PCMB): <strong>93%</strong> | 10th Standard: <strong>96.96%</strong>
+                        </span>
+                    </div>
+                    <span class="date">2011 - 2024</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- CERTIFICATIONS (New Section) -->
+        <section>
+            <h3 class="section-title">Certifications</h3>
+            <ul class="cert-list">
+                <li>
+                    <strong>Oracle Cloud Infrastructure (OCI) Certified</strong> : 
+                    <span style="color:#666; font-size: 0.9rem;">Validated skills in cloud architecture and OCI core services.</span>
+                </li>
+                <li>
+                    <strong>Google Generative AI Fundamentals</strong> : 
+                    <span style="color:#666; font-size: 0.9rem;">Completed training on Large Language Models and AI integration.</span>
+                </li>
+                <li>
+                    <strong>HackerRank - Python Certification </strong> : 
+                    <span style="color:#666; font-size: 0.9rem;">Certified in Python on HackerRank</span>     
+                </li>
+                <li>
+                    <strong>NPTEL - Programming In Java</strong> : 
+                    <span style="color:#666; font-size: 0.9rem;">Earned Elite Distinction in NPTEL Programming In  Java </span>     
+                </li>
+            </ul>
+        </section>
+
+        <!-- PROJECTS (Updated) -->
+        <section>
+            <h3 class="section-title">Projects</h3>
+            
+            <!-- AI Chatbot -->
+            <div class="entry">
+                <div class="entry-header">
+                    <a href="https://aschatbot.ccbp.tech"><span class="title">AI Chatbot Application</span>: 
+                </a></div>
+                <h4>
+                    Built an interactive AI-powered chat interface.
+            </h4>
+                <ul>
+                    <li>Developed a responsive user interface using HTML and CSS.</li>
+                    <li>Integrated AI logic to simulate real-time conversational responses.</li>
+                    <li>Focus on clean UI and user experience.</li>
+                </ul>
+            </div>
+
+            <!-- Calculator -->
+            <div class="entry">
+                <div class="entry-header">
+                    <a href="http://127.0.0.1:5500/CALCULATOR/a.html"><span class="title">JavaScript Calculator</span>
+                </div></a>
+                <h4>
+                    A fully functional arithmetic calculator.
+                </h4>
+                <ul>
+                    <li>Designed using CSS Grid/Flexbox for mobile responsiveness.</li>
+                    <li>Implemented logic for all basic mathematical operations using Vanilla JS.</li>
+                </ul>
+            </div>
+
+            <!-- This Resume  <div class="entry">
+                <div class="entry-header">
+                    <span class="title">Digital Resume Website</span>
+                </div>
+                <p>
+                    Created this printable, responsive digital resume from scratch using raw HTML/CSS.
+                </p>
+            </div>
+        </section> -->
+           
+
+        <!-- SKILLS -->
+        <section>
+            <h3 class="section-title">Skills</h3>
+            <div class="skills-container">
+                <div class="skill-category">Languages</div>
+                <div>JavaScript (ES6+), Python, C, Java, C++, Rust</div>
+
+                <div class="skill-category">Web Technologies:</div>
+                <div> HTML5, CSS3, JavaScript, React.js HTML5, CSS3, JavaScript, React.js</div>
+             
+                
+                <div class="skill-category">Frameworks</div>
+                <div>React.js, Node.js, Express, Django</div>
+                
+                <div class="skill-category">Database Management:</div>
+                <div>MySQL, MongoDB, PostgreSQL</div>
+                
+
+                	 
+                <div class="skill-category">Tools & Platforms: </div>
+                <div>Git, GitHub, VS Code, Figma, Power BI, Microsoft Excel</div>    
+        </section>
+        <!-- lang -->
+          <h3 class="section-title">Languages</h3>
+    <section id="languages">
+    <div class="language-list-dots">
+        <div class="language-item-dots">
+              
+        <div class="languagea-entry-container">
+            <h3>English ⚫⚫⚫⚫⚫</h3> <br>
+               <h3>Kannada ⚫⚫⚫⚫⚫</h3> <br>
+               <h3>Hindi ⚫⚫⚫⚫⚪</h3><br>
+              
+             
+        </div>
+    </div>
+     </div>
+</section>
+</div>
+
+    <div class="btn-container">
+        <button onclick="window.print()">Download PDF / Print</button>
+     
+    </div>
+ 
+</body>
+</html>
+<!-- /* CSS rules to fill the appropriate number of dots with blue */
+
+/* 
+
+#languages {
+    margin-bottom: 2rem;
+}
+
+#languages h2 {
+    color: #000000;
+    border-bottom: 2px solid #007acc;
+    padding-bottom: 0.3rem;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+}
+
+.language-list-dots {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.language-item-dots h3 {
+    margin: 0 0 0.4rem 0;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+/* Base styles for the list of dots */
+.proficiency-dots {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 5px; /* Space between the dots */
+}
+
+/* Base style for every dot (the empty state) */
+.proficiency-dots li {
+    width: 12px;  /* Size of the dot */
+    height: 12px; /* Size of the dot */
+    background-color: #ddd; /* Color for empty dots (light gray) */
+    border-radius: 50%; /* Makes the div a circle */
+    border: 1px solid #aaa;
+}
+
+c
+For 5/5 proficiency */
+.five-of-five li {
+    background-color: #007acc; /* Blue fill for all 5 */
+    border-color: #007acc;
+}
+
+/* For 4/5 proficiency */
+.four-of-five li:nth-child(-n+4) {
+    background-color: #007acc; 
+    border-color: #007acc;
+}
+
+/* For 3/5 proficiency */
+.three-of-five li:nth-child(-n+3) {
+     background-color: #007acc;
+     border-color: #007acc;
+}
+
+/* For 2/5 proficiency */
+.two-of-five li:nth-child(-n+2) {
+     background-color: #007acc;
+     border-color: #007acc;
+}
+
+/* For 1/5 proficiency */
+.one-of-five li:nth-child(-n+1) {
+     background-color: #007acc;
+     border-color: #007acc;
+
+}-->
