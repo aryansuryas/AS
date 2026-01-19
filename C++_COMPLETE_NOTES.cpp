@@ -9,8 +9,8 @@ C++ offers a vast range of libraries and tools, such as the Standard Template Li
 https://www.youtube.com/watch?v=vLnPwxZdW4Y  ( C++ BASICS NEDED )
 
 🔴🟡🟢 OUTPUT
-->  g++ filename.cpp -o filename
-->./filename
+->  g++ filename.cpp -o filename  -> Compiler
+->./filename                      -> output
 
                                    
                                      //BASIC CODE
@@ -114,6 +114,7 @@ Once Variable Name Given Cannot Be changed.
 
 Dynamically typed languages check types at runtime (e.g., Python, JavaScript), allowing more flexibility, faster initial coding, but potentially leading to runtime errors, as variables can change types.
 One Variable Name Given Can Be changed.
+
 
 
 
