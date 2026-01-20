@@ -12,7 +12,7 @@ https://www.youtube.com/watch?v=vLnPwxZdW4Y  ( C++ BASICS NEDED )
 ->  g++ filename.cpp -o filename  -> Compiler
 ->./filename                      -> output
 
-                                   
+     use namespace std for removing std::                              
                                      //BASIC CODE
 #include <iostream> //INPUT - OUTPUT STREAM
 int main(){
@@ -130,6 +130,7 @@ std::cout << "Hello, World!" << std::endl;                                      
 
 
 ---------------
+
 
 #include <iostream> // Header for
 // Without using namespace std;
