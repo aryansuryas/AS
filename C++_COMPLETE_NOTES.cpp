@@ -129,4 +129,19 @@ std::cout << "/____|" << std::endl;                                             
 std::cout << "Hello, World!" << std::endl;                                                                  Hello, World!
 
 
+---------------
 
+#include <iostream> // Header for
+// Without using namespace std;
+int main() {
+std::cout << "Hello, World!" <<<<
+return 0;
+}
+
+// With using namespace std;
+#include <iostream>
+using namespace std; // Brings ever
+int main() {
+cout << "Hello, World!" << endl
+return 0;
+}
