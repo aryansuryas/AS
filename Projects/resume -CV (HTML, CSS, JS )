@@ -71,8 +71,7 @@
             flex-wrap: wrap;
             gap: 5px;
         }
-
-        .contact-line a {
+.contact-line a {
             color: var(--primary-black);
             text-decoration: none;
             font-weight: 600;
