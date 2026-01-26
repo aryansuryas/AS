@@ -61,7 +61,6 @@ std::cout << "HEllo " << name << "My Age is " <<a << "And my CGPA is " << d << '
     return 0;
  }
 
-
  //int : 4 bytes whole number (1,2,3,55,44,999,1000,10,1,-20)
  //double : 8 bytes decimal number (1.5,2.3,3.14,44.99,100.001,-20.55)
  //char : 1 byte single character ('A','B','C','D','a','b','c','d','1','2','3','@','#','$') use ' ' single Quote to represent character
@@ -69,6 +68,10 @@ std::cout << "HEllo " << name << "My Age is " <<a << "And my CGPA is " << d << '
  //string : varies multiple characters ("Hello","John Doe","Tuesday","$1000") use " " double Quote to represent string
  //float : 4 bytes decimal number (1.5,2.3,3.14,44.99,100.001,-20.55) less precise than double
  //long : 8 bytes whole number (1,2,3,55,44,999,1000,10,1,-20) larger range than int
+
+  
+
+//-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 #include <iostream> // Header for
 // Without using namespace std;
@@ -107,20 +110,18 @@ as.cpp:6:7: error: assignment of read-only variable 'PI'
 
 //----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
- 
+
 Statically typed languages check variable types at compile-time (e.g., Java, C++), catching errors early, requiring explicit type declarations, and offering better performance
 Once Variable Name Given Cannot Be changed.
-
+  
 Dynamically typed languages check types at runtime (e.g., Python, JavaScript), allowing more flexibility, faster initial coding, but potentially leading to runtime errors, as variables can change types.
 One Variable Name Given Can Be changed.
+
 
 
 //----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
                                                                     Example Code Outputs
  
-
-
-
 
 
 
