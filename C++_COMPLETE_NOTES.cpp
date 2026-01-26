@@ -100,15 +100,9 @@ as.cpp:6:7: error: assignment of read-only variable 'PI'
 //----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
   TAKING INPUT AND PRINTING
 
-  #include <iostream>
-int main(){
      int number;
-    std::cout << " Enter A Number : " ;
      std::cin >> number;
-    std::cout << "HELLO WORLD " << number << std::endl;
-    return 0;
-}
-
+ 
 Statically typed languages check variable types at compile-time (e.g., Java, C++), catching errors early, requiring explicit type declarations, and offering better performance
 Once Variable Name Given Cannot Be changed.
 
@@ -119,17 +113,6 @@ One Variable Name Given Can Be changed.
 //----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
                                                                     Example Code Outputs
  
-CODE (Left)                                                                                                   OUTPUT 
--------------------------------------------------------------------------------------------------------------------------------
-std::cout << "    /|" << std::endl;                                                                               /|
-std::cout << "   / |" << std::endl;                                                                              / |
-std::cout << "  /  |" << std::endl;                                                                             /  |
-std::cout << " /   |" << std::endl;                                                                            /   |
-std::cout << "/____|" << std::endl;                                                                           /____|
-std::cout << "Hello, World!" << std::endl;                                                                  Hello, World!
-
-
----------------
 
 
 #include <iostream> // Header for
@@ -146,6 +129,7 @@ int main() {
 cout << "Hello, World!" << endl
 return 0;
 }
+
 
 
 
