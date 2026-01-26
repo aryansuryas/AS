@@ -11,18 +11,12 @@ https://www.youtube.com/watch?v=vLnPwxZdW4Y  ( C++ BASICS NEDED )
 🔴🟡🟢 OUTPUT
 ->  g++ filename.cpp -o filename  -> Compiler
 ->./filename                      -> output
-
-     use namespace std for removing std::                              
-                                     //BASIC CODE
+                          
+//----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                                      BASIC CODE
 #include <iostream> //INPUT - OUTPUT STREAM
 int main(){
     std::cout << "Hello, World!"  ;  // standard Character Output
-    return 0;
-}
- 
-//----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- #include <iostream>
- int main(){
     std::cout <<"Hello World AS" << std::endl; // << std::endl; acts like full stop and adds next text to next line (Flushes the output buffer)
     std::cout <<"ARYAN SURYA S" << std::endl;
     // This (//) is single line comment
@@ -31,13 +25,7 @@ int main(){
          a
           multi-line
          comment */
-    return 0;
- }
-//----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- #include <iostream>
- int main(){
-      
-int a=10;
+  int a=10;
 int d=20;
 int q=a+d;
 
@@ -47,6 +35,10 @@ std::cout <<q << '\n'; //30
     return 0;
  }
 
+  TAKING INPUT AND PRINTING
+
+     int number;
+     std::cin >> number;
 //-----------------------------------------------------------------------  VARIABLES  --------------------------------------------------------------------------------------------
  #include <iostream>
  int main(){     
@@ -75,7 +67,6 @@ std::cout << "HEllo " << name << "My Age is " <<a << "And my CGPA is " << d << '
  //char : 1 byte single character ('A','B','C','D','a','b','c','d','1','2','3','@','#','$') use ' ' single Quote to represent character
  //bool : 1 byte true or false (true, false) (1,0)
  //string : varies multiple characters ("Hello","John Doe","Tuesday","$1000") use " " double Quote to represent string
- 
  //float : 4 bytes decimal number (1.5,2.3,3.14,44.99,100.001,-20.55) less precise than double
  //long : 8 bytes whole number (1,2,3,55,44,999,1000,10,1,-20) larger range than int
 
@@ -98,10 +89,7 @@ as.cpp:6:7: error: assignment of read-only variable 'PI'
        */
 
 //----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  TAKING INPUT AND PRINTING
 
-     int number;
-     std::cin >> number;
  
 Statically typed languages check variable types at compile-time (e.g., Java, C++), catching errors early, requiring explicit type declarations, and offering better performance
 Once Variable Name Given Cannot Be changed.
@@ -129,6 +117,7 @@ int main() {
 cout << "Hello, World!" << endl
 return 0;
 }
+
 
 
 
