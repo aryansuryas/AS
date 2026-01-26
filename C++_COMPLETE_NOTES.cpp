@@ -70,8 +70,25 @@ std::cout << "HEllo " << name << "My Age is " <<a << "And my CGPA is " << d << '
  //float : 4 bytes decimal number (1.5,2.3,3.14,44.99,100.001,-20.55) less precise than double
  //long : 8 bytes whole number (1,2,3,55,44,999,1000,10,1,-20) larger range than int
 
-//------------------------------------------------------------------------ const Keyword  ------------------------------------------------------------------------------------------------
+#include <iostream> // Header for
+// Without using namespace std;
+int main() {
+std::cout << "Hello, World!" <<<<
+return 0;
+}
 
+// With using namespace std;
+#include <iostream>
+using namespace std; // Brings ever
+int main() {
+cout << "Hello, World!" << endl
+return 0;
+}
+
+
+
+
+//------------------------------------------------------------------------ const Keyword  ------------------------------------------------------------------------------------------------
 
  #include <iostream>
  int main(){     
@@ -101,22 +118,6 @@ One Variable Name Given Can Be changed.
 //----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
                                                                     Example Code Outputs
  
-
-
-#include <iostream> // Header for
-// Without using namespace std;
-int main() {
-std::cout << "Hello, World!" <<<<
-return 0;
-}
-
-// With using namespace std;
-#include <iostream>
-using namespace std; // Brings ever
-int main() {
-cout << "Hello, World!" << endl
-return 0;
-}
 
 
 
