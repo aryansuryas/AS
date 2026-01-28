@@ -9,14 +9,11 @@ SQL is a simple database basic component of database.
           Always set a password for the root user
 
 
-
                                                       Types of Databases 
 🛑 Relational Databases                                                            🛑 Non-Relational Databases (NoSQL)    
 Data stored in tables (rows & columns)                                              Data not stored in tables. But stored in  Flexible structure
 Uses SQL                                                                            Examples: MongoDB,Cassandra      
 Examples:MySQL,PostgreSQL,Oracle                              
-
-
 
 MySQL Basic Concepts
 Database → Folder
