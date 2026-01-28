@@ -46,7 +46,6 @@ CREATE TABLE EMPLOYEE (
     salary DECIMAL(5,3),
     hire_date DATE
 );
-
 🟣Data Types Explained
 VARCHAR(50) → String (max 50 characters)
 INT → Integer
