@@ -12,14 +12,10 @@ tailwind CSS
 
 
 
-
-
-
  Three Types of Representing CSS
     1. Inline CSS (INSIDE HTML TAG)
    /* <body style="background-color: rgb(255, 140, 0);color:aqua"></body>
     <h1 style="color:rgb(253, 1, 1)">This is a Website</h1> */
-
 
     2. Internal CSS (INSIDE HTML FILE)
     /* <head>
@@ -37,7 +33,6 @@ tailwind CSS
         }
     </style>
 </head> /*/
-
 
     3. External CSS ( SEPARATE CSS FILE)
     <link rel="stylesheet" href="style.css">
