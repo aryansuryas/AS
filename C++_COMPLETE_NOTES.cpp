@@ -5,7 +5,8 @@
  Download all the Extension (C++/C  runner , .coderunenr) and in Vs code website MinGW dowmload Compiler  OR  use codeblocks ✅ (More preferred)
 C++ offers a vast range of libraries and tools, such as the Standard Template Library (STL)
 
- https://youtu.be/z2jDamkbBF0?si=jBpAcgaw3asPojT5  (WATCH HOW TO RUN C/C++ IN SYSTEM  )
+
+ https://youtu.be/z2jDamkbBF0?si=jBpAcgaw3asPojT5  (WATCH HOW TO RUN C/C++ IN SYSTEM  )
 https://www.youtube.com/watch?v=vLnPwxZdW4Y  ( C++ BASICS NEDED )
 
 🔴🟡🟢 OUTPUT
@@ -68,8 +69,6 @@ std::cout << "HEllo " << name << "My Age is " <<a << "And my CGPA is " << d << '
  //string : varies multiple characters ("Hello","John Doe","Tuesday","$1000") use " " double Quote to represent string
  //float : 4 bytes decimal number (1.5,2.3,3.14,44.99,100.001,-20.55) less precise than double
  //long : 8 bytes whole number (1,2,3,55,44,999,1000,10,1,-20) larger range than int
-
-  
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 #include <iostream> // Header for
@@ -83,12 +82,9 @@ return 0;
 #include <iostream>
 using namespace std; // Brings ever
 int main() {
-cout << "Hello, World!" << endl
+cout << "Hello, World!" << endl;
 return 0;
 }
-
-
-
 
 //------------------------------------------------------------------------ const Keyword  ------------------------------------------------------------------------------------------------
 
@@ -121,6 +117,7 @@ One Variable Name Given Can Be changed.
 //----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
                                                                     Example Code Outputs
  
+
 
 
 
