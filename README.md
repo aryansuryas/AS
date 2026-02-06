@@ -3,4 +3,4 @@ Here you’ll find 📚 programming language notes, 💻 coding examples, and �
 Happy coding 🚀✨🏅  
  
 CS50 : https://www.edx.org/cs50.                                            
-Claudw AI : https://claude.ai/login
+Claude AI : https://claude.ai/login
