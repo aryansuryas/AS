@@ -9,3 +9,4 @@ Lovable AI : Build Websites :: https://lovable.dev/.
 Google AI Studio : Vibe Coding :: https://aistudio.google.com/vibe-code.                       
 NotebookLM : To summarise Things :: https://notebooklm.google/.                 
 lottieflow.com : Animated Icons :: https://iconscout.com/lottie-animations
+HTML
