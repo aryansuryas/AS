@@ -11,5 +11,4 @@ NotebookLM : To summarise Things :: https://notebooklm.google/.
 lottieflow.com : Animated Icons :: https://iconscout.com/lottie-animations
 HTML
 cSS
-jd nea UMB cj
-ok.
+jd nea UMB 
