@@ -11,3 +11,4 @@ NotebookLM : To summarise Things :: https://notebooklm.google/.
 lottieflow.com : Animated Icons :: https://iconscout.com/lottie-animation                                                     
 freecodecamp : https://www.freecodecamp.org/                                                 
 roadmap.sh :: Roadmaps for begineers :: https://roadmap.sh/
+ok
