@@ -6,17 +6,9 @@ Happy coding 🚀✨🏅
  
 
 Your session starts in 1 hour.
-
-Session Details:
-Time: 7:00PM
-Join here: https://m.9m.io/NXTWVE/bl90gpg
-
-Please join on time to not miss any content.
-
-- NxtWave Academy
  
 
-
+new cudfw xcccccccccccbxz x ddddddddddddddddddd  dddddddddddddd dddddddddddddddddd ddddddddddddddd db
 
 https://drive.google.com/drive/u/0/mobile/folders/1YYMr0eNHOzy29K4qldC4E59h-ukSnGuc?pli=1This is a simple car dodging game created using MIT Scratch.
 The player controls a car that can move between three lanes on the road. Enemy cars come from the opposite direction and move towards the player.
