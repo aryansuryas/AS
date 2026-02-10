@@ -17,3 +17,9 @@ Please join on time to not miss any content.
  
 
 
+
+https://drive.google.com/drive/u/0/mobile/folders/1YYMr0eNHOzy29K4qldC4E59h-ukSnGuc?pli=1This is a simple car dodging game created using MIT Scratch.
+The player controls a car that can move between three lanes on the road. Enemy cars come from the opposite direction and move towards the player.
+The main goal of the game is to avoid hitting the enemy cars by changing lanes at the right time using the keyboard.
+If the player’s car touches any enemy car, the game shows “Game Over” and restarts.
+
