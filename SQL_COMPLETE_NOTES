@@ -179,38 +179,6 @@ INSERT INTO student(usn,std_name,address,roll_no,phone_number,gender) VALUES('A0
 INSERT INTO student(usn,std_name,address,roll_no,phone_number,gender) VALUES('A003','Aice','789 Street, France',03,9456123987,'F');
  
 select * from student;
---------------------------------------------------------------------------------------------------------
-=============================
- CREATE DATABASE one;
-USE one;
-SHOW DATABASES;
-use one;
-
- create table student(
- usn varchar(11) NOT NUll,std_name varchar(50),address varchar(50),roll_no int(2),gender CHAR,PRIMARY KEY (usn));
-DESC student;
-
-
-
-CREATE TABLE exam(
-s_id VARCHAR(10) not null,sem int,sec char,primary key (s_id));
-DESC exam; 
-
-
-CREATE TABLE class(
-usn varchar(11) not null,
-s_id varchar(10),
-PRIMARY KEY(usn),
-FOREIGN key(usn)REFERENCES student(usn) ON DELETE CASCADE,
-FOREIGN key(s_id)REFERENCES exam(s_id) ON DELETE CASCADE);
-
-DESC class;
-
-
-INSERT INTO student(usn,std_name,address,roll_no,phone_number,gender) VALUES('A001','Arun','123 Main, New York',01,9901234567,'M');
-INSERT INTO student(usn,std_name,address,roll_no,phone_number,gender) VALUES('A002','Arvind','456  Circle, Landon',02,7892551815,'M');
-INSERT INTO student(usn,std_name,address,roll_no,phone_number,gender) VALUES('A003','Aice','789 Street, France',03,9456123987,'F');
-
  
 INSERT INTO exam(s_id,sem,sec)VALUES('24CS01',1,'A'); 
 INSERT INTO exam(s_id,sem,sec)VALUES('24CS02',1,'B'); 
