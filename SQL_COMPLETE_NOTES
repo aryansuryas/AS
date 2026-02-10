@@ -210,4 +210,47 @@ DESC class;
 INSERT INTO student(usn,std_name,address,roll_no,phone_number,gender) VALUES('A001','Arun','123 Main, New York',01,9901234567,'M');
 INSERT INTO student(usn,std_name,address,roll_no,phone_number,gender) VALUES('A002','Arvind','456  Circle, Landon',02,7892551815,'M');
 INSERT INTO student(usn,std_name,address,roll_no,phone_number,gender) VALUES('A003','Aice','789 Street, France',03,9456123987,'F');
+
  
+INSERT INTO exam(s_id,sem,sec)VALUES('24CS01',1,'A'); 
+INSERT INTO exam(s_id,sem,sec)VALUES('24CS02',1,'B'); 
+INSERT INTO exam(s_id,sem,sec)VALUES('24CS03',2,'C');
+INSERT INTO exam(s_id,sem,sec)VALUES('24CS04',2,'D');
+INSERT INTO exam(s_id,sem,sec)VALUES('24CS05',2,'E');
+INSERT INTO exam(s_id,sem,sec)VALUES('24CS06',2,'G');
+INSERT INTO exam(s_id,sem,sec)VALUES('24CS07',2,'H');
+INSERT INTO exam(s_id,sem,sec)VALUES('24CS08',2,'I');
+
+INSERT INTO class(usn,s_id)VALUES('A001','24CS01');
+INSERT INTO class(usn,s_id)VALUES('A002','24CS02');
+INSERT INTO class(usn,s_id)VALUES('A003','24CS03');
+ 
+SELECT * FROM class;
+INSERT INTO class(usn,s_id)VALUES('S001','SS001');
+
+UPDATE student SET address='402 Miami,Florida' WHERE usn='A001';
+select * FROM student WHERE usn='A001';
+ 
+
+DELETE FROM student where usn='A001';
+SELECT * FROM student;
+
+SELECT * FROM class;
+
+CREATE TABLE sub(subcodes VARCHAR(5) NOT NULL,title VARCHAR(15),sem INT,credits INT,PRIMARY KEY(subcodes));
+DESC sub;
+ 
+ 
+CREATE TABLE iamarks(
+usn VARCHAR(10)NOT NULL,
+subcodes VARCHAR(5),
+s_id VARCHAR(10),
+test_1 INT,
+test_2 INT,
+test_3 INT,
+finalia INT,
+PRIMARY KEY (usn,sub_code,s_id),
+FOREIGN KEY (usn) REFERENCES student(usn) ON DELETE CASCADE,
+FOREIGN KEY (subcodes) REFERENCES sub(subcodes) ON DELETE CASCADE,
+FOREIGN KEY (s_id) REFERENCES  exam(s_id) ON DELETE CASCADE);
+
