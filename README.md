@@ -1,6 +1,4 @@
 Hi 👋, I’m Aryan Surya S.🏅                                       
-Here you’ll find 📚 programming language notes, 💻 coding examples, and 🛠️ important services & resources to support your learning and development journey.
+Here you’ll find 📚 programming language notes, 💻 coding examples, and 🛠️ important points & resources to support your learning and development journey.
 Happy coding 🚀✨🏅  
- dv
  
-https://drive.google.com/drive/u/0/mobile/folders/1YYMr0eNHOzy29K4qldC4E59h-ukSnGuc?pli=1 
