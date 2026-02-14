@@ -5,7 +5,7 @@ It is used to create, manage, and manipulate databases.
 SQL is a simple database basic component of database. 
 🔵MySQL Environment
           Use MinGW64 (for command-line tools if required)
-          Use MySQL Workbench 8.0 CE
+          Use MySQL Workbench 
           Always set a password for the root user
 
 
