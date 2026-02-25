@@ -1,4 +1,2 @@
-  programming language notes, 💻 coding examples, and 🛠️ important points & resources to support your learning and developme 
-
-
+  programming language notes, 💻 coding examples, and 🛠️ i 
 
