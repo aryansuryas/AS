@@ -1,5 +1,5 @@
-Here you’ll find 📚 programming language notes, 💻 coding examples, and 🛠️ important points & resources to support your learning and development journey.
-Happy coding 🚀✨🏅 
+  programming language notes, 💻 coding examples, and 🛠️ important points & resources to support your learning and development journey.
+ 
 
 
 
