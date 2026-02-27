@@ -1,2 +1,2 @@
-  programming language notes, 💻 coding examples, and 🛠️ i 
+  programming language notes, 💻 coding examples, and 🛠️ 
 
