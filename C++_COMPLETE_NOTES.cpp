@@ -1,6 +1,6 @@
                                                                C++
  Fast , Video Editting , Middle Level , Used for creating video games
- high Level = Human readable  Low Level= Machine Readable   c++ Middle Leveld
+ high Level = Human readable  Low Level= Machine Readable   c++ Middle Levelddvev
  EXTENSION (.cpp) OBJECT ORIENTED PROGRAMMNG
  Download all the Extension (C++/C  runner , .coderunenr) and in Vs code website MinGW dowmload Compiler  OR  use codeblocks ✅ (More preferred)
 C++ offers a vast range of libraries and tools, such as the Standard Template Library (STL)
@@ -127,6 +127,7 @@ int main() {
 std::cout << "Hello, World!" <<<<
 return 0;
 }
+
 
 
 
