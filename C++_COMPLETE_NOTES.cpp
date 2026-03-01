@@ -12,7 +12,7 @@ https://www.youtube.com/watch?v=vLnPwxZdW4Y  ( C++ BASICS NEDED )
 ->  g++ filename.cpp -o filename  -> Compiler
 ->./filename                      -> output
 
-  ⚫⚫⚪⚪ : codeblocks
+  ⚫⚫⚪⚪ : codeblocks : code editor
                           
 //------------------------------------------------------------------------------------------------------------------------o----------------------------------------------------
                                                                       BASIC CODE
@@ -127,6 +127,7 @@ int main() {
 std::cout << "Hello, World!" <<<<
 return 0;
 }
+
 
 
 
