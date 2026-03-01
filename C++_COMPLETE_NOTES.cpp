@@ -11,6 +11,8 @@ https://www.youtube.com/watch?v=vLnPwxZdW4Y  ( C++ BASICS NEDED )
 🔴🟡🟢 OUTPUT
 ->  g++ filename.cpp -o filename  -> Compiler
 ->./filename                      -> output
+
+  ⚫⚫⚪⚪
                           
 //------------------------------------------------------------------------------------------------------------------------o----------------------------------------------------
                                                                       BASIC CODE
@@ -125,6 +127,7 @@ int main() {
 std::cout << "Hello, World!" <<<<
 return 0;
 }
+
 
 
 
